@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Insert" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234.4,2828" sap2010:WorkflowViewState.IdRef="Insert_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Insert" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234.4,2782.4" sap2010:WorkflowViewState.IdRef="Insert_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -32,6 +32,7 @@
       <x:String>UiPath.CSV.Activities</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -86,9 +87,15 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Insert" sap:VirtualizedContainerService.HintSize="635.2,2763.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Insert" sap:VirtualizedContainerService.HintSize="797.6,2717.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, s:DateTime)" Name="dictLatestUpdated" />
       <Variable x:TypeArguments="s:DateTime" Name="dateDownload" />
@@ -101,7 +108,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="572.8,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="735.2,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -129,7 +136,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListLatestUpdated.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="572.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Helper\ListLatestUpdated.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListLatestUpdated.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="735.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Helper\ListLatestUpdated.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, s:DateTime)" x:Key="dictLatestUpdated">[dictLatestUpdated]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
@@ -140,14 +147,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <Sequence DisplayName="Sequence : Report 1" sap:VirtualizedContainerService.HintSize="572.8,776.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence DisplayName="Sequence : Report 1" sap:VirtualizedContainerService.HintSize="735.2,83.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="402.4,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -175,7 +182,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <If Condition="[dictLatestUpdated.ContainsKey(strReportName) = true]" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="If_2">
+      <If Condition="[dictLatestUpdated.ContainsKey(strReportName) = true]" sap:VirtualizedContainerService.HintSize="402.4,52.8" sap2010:WorkflowViewState.IdRef="If_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -203,7 +210,7 @@
           <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8" />
         </If.Else>
       </If>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListInsertFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Helper\ListInsertFile.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListInsertFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="402.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Helper\ListInsertFile.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="listFileName">[listFileName]</OutArgument>
           <InArgument x:TypeArguments="x:String" x:Key="strReportName">[strReportName]</InArgument>
@@ -216,7 +223,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
-      <If Condition="[listFileName.Count&gt;0]" sap:VirtualizedContainerService.HintSize="410.4,386.4" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[listFileName.Count&gt;0]" sap:VirtualizedContainerService.HintSize="402.4,325.6" sap2010:WorkflowViewState.IdRef="If_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -224,17 +231,23 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="376.8,203.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="368.8,142.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Report\Report1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Report\Report1.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Report\Report1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="325.6,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Report\Report1.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="scg:List(x:String)" x:Key="listFileName">[listFileName]</InArgument>
                 <OutArgument x:TypeArguments="sd:DataTable" x:Key="dtResult">[dtReport1]</OutArgument>
               </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
           </Sequence>
         </If.Then>
@@ -243,7 +256,335 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 2" sap:VirtualizedContainerService.HintSize="572.8,83.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence DisplayName="Sequence : Report 1 (Insert)" sap:VirtualizedContainerService.HintSize="735.2,1743.2" sap2010:WorkflowViewState.IdRef="Sequence_30">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If Condition="[dtReport1.Rows.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="672.8,1631.2" sap2010:WorkflowViewState.IdRef="If_11">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="639.2,1448" sap2010:WorkflowViewState.IdRef="Sequence_31">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="s:String[]" Name="arrDTRows" />
+              <Variable x:TypeArguments="x:String" Name="strSqlCommand" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="596,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="s:String[]">[arrDTRows]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="s:String[]">[new String(){}]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MultipleAssign>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtReport1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="596,975.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="562.4,859.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="strEmployDate" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[Not CurrentRow(&quot;EMPLOY_DATE&quot;).ToString.Length &lt;= 0]" sap:VirtualizedContainerService.HintSize="500,747.2" sap2010:WorkflowViewState.IdRef="If_12">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="466.4,564" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="strLessonId" />
+                            <Variable x:TypeArguments="x:String" Name="strStartDate" />
+                            <Variable x:TypeArguments="x:String" Name="strEndDate" />
+                            <Variable x:TypeArguments="x:String" Name="strTimeSpend" />
+                            <Variable x:TypeArguments="x:String" Name="strLastestDate" />
+                            <Variable x:TypeArguments="x:String" Name="strExpireDate" />
+                            <Variable x:TypeArguments="x:String" Name="strPercentProgress" />
+                            <Variable x:TypeArguments="x:String" Name="strRow" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,381.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                            <ui:MultipleAssign.AssignOperations>
+                              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strEmployDate]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[IF(CurrentRow("EMPLOY_DATE").ToString.Length &gt; 1,"'"+CurrentRow("EMPLOY_DATE").ToString + "'","NULL")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strLessonId]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[IF(CurrentRow("LESSON_ID").ToString.Length &gt; 1,"'"+CurrentRow("LESSON_ID").ToString + "'","NULL")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strStartDate]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[IF(CurrentRow("START_DATE").ToString.Length &gt; 1,"'"+CurrentRow("START_DATE").ToString + "'","NULL")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strEndDate]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[IF(CurrentRow("END_DATE").ToString.Length &gt; 1,"'"+CurrentRow("END_DATE").ToString + "'","NULL")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strTimeSpend]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[IF(CurrentRow("TIME_SPEND").ToString.Length &gt; 1,"'"+CurrentRow("TIME_SPEND").ToString + "'","NULL")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strLastestDate]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[IF(CurrentRow("LATEST_DATE").ToString.Length &gt; 1,"'"+CurrentRow("LATEST_DATE").ToString + "'","NULL")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strExpireDate]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[IF(CurrentRow("EXPIRE_DATE").ToString.Length &gt; 1,"'"+CurrentRow("EXPIRE_DATE").ToString + "'","NULL")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strPercentProgress]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String">[IF(CurrentRow("PERCENT_PROGRESS").ToString.Length &gt; 1,"'"+CurrentRow("PERCENT_PROGRESS").ToString + "'","NULL")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_23">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="x:String">[strRow]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="x:String" xml:space="preserve">[String.Format("({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21})",
+"'"+CurrentRow("EMP_CODE").ToString+"'",
+"'"+CurrentRow("NAME_THAI").ToString+"'",
+"'"+CurrentRow("NAME_ENG").ToString+"'",
+"'"+CurrentRow("COURSE_ID").ToString+"'",
+"'"+CurrentRow("COURSE_NAME").ToString+"'",
+"'"+CurrentRow("COURSE_CATEGORY").ToString+"'",
+"'"+CurrentRow("COURSE_MODE").ToString+"'",
+"'"+CurrentRow("WORKS_TATUS").ToString+"'",
+strEmployDate,
+"'"+CurrentRow("COST_CENTER_CODE").ToString+"'",
+"'"+CurrentRow("ORG_GROUP_ENG").ToString+"'",
+"'"+CurrentRow("SUPER_THAI").ToString+"'",
+strLessonId,
+"'"+CurrentRow("LESSON_LATEST").ToString+"'",
+strStartDate,
+strEndDate,
+strTimeSpend,
+strLastestDate,
+strExpireDate,
+strPercentProgress,
+"'"+CurrentRow("COURSE_RESULT").ToString+"'",
+"'"+CurrentRow("FROM_FILE").ToString+"'")]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
+                                  <ui:AssignOperation.To>
+                                    <OutArgument x:TypeArguments="s:String[]">[arrDTRows]</OutArgument>
+                                  </ui:AssignOperation.To>
+                                  <ui:AssignOperation.Value>
+                                    <InArgument x:TypeArguments="s:String[]">[arrDTRows.Concat(new String(){strRow}).ToArray]</InArgument>
+                                  </ui:AssignOperation.Value>
+                                </ui:AssignOperation>
+                              </scg:List>
+                            </ui:MultipleAssign.AssignOperations>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:MultipleAssign>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[strRow]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </WriteLine>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_35" />
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="596,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[strSqlCommand]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String" xml:space="preserve">["MERGE [LMS_Report1] AS t
+USING (VALUES " + String.Join("," + Environment.NewLine, arrDTRows) +  ")
+	AS s ([EMP_CODE],[NAME_THAI],[NAME_ENG],[COURSE_ID],[COURSE_NAME],[COURSE_CATEGORY],[COURSE_MODE],[WORKS_TATUS],[EMPLOY_DATE],[COST_CENTER_CODE],[ORG_GROUP_ENG],[SUPER_THAI],[LESSON_ID],[LESSON_LATEST],[START_DATE],[END_DATE],[TIME_SPEND],[LATEST_DATE],[EXPIRE_DATE],[PERCENT_PROGRESS],[COURSE_RESULT],[FROM_FILE])
+	ON s.[EMP_CODE] = t.[EMP_CODE]
+    AND s.[COURSE_ID] = t.[COURSE_ID]
+WHEN MATCHED AND (s.[PERCENT_PROGRESS] &lt;&gt; t.[PERCENT_PROGRESS])  THEN 
+	UPDATE 
+    SET [NAME_THAI] = s.[NAME_THAI],
+		[NAME_ENG] = s.[NAME_ENG],
+		[COURSE_NAME] = s.[COURSE_NAME],
+		[COURSE_CATEGORY] = s.[COURSE_CATEGORY],
+		[COURSE_MODE] = s.[COURSE_MODE],
+		[WORKS_TATUS] = s.[WORKS_TATUS],
+		[EMPLOY_DATE] = s.[EMPLOY_DATE],
+		[COST_CENTER_CODE] = s.[COST_CENTER_CODE],
+		[ORG_GROUP_ENG] = s.[ORG_GROUP_ENG],
+		[SUPER_THAI] = s.[SUPER_THAI],
+		[LESSON_ID] = s.[LESSON_ID],
+		[LESSON_LATEST] = s.[LESSON_LATEST],
+		[START_DATE] = s.[START_DATE],
+		[END_DATE] = s.[END_DATE],
+		[TIME_SPEND] = s.[TIME_SPEND],
+		[LATEST_DATE] = s.[LATEST_DATE],
+		[EXPIRE_DATE] = s.[EXPIRE_DATE],
+		[PERCENT_PROGRESS] = s.[PERCENT_PROGRESS],
+		[COURSE_RESULT] = s.[COURSE_RESULT],
+		[FROM_FILE] = s.[FROM_FILE],
+		[UPDATED_BY] = 'uipath' ,
+		[UPDATED_TIME] = GETDATE()
+WHEN NOT MATCHED THEN 
+    INSERT  ([EMP_CODE]
+           ,[NAME_THAI]
+           ,[NAME_ENG]
+           ,[COURSE_ID]
+           ,[COURSE_NAME]
+           ,[COURSE_CATEGORY]
+           ,[COURSE_MODE]
+           ,[WORKS_TATUS]
+           ,[EMPLOY_DATE]
+           ,[COST_CENTER_CODE]
+           ,[ORG_GROUP_ENG]
+           ,[SUPER_THAI]
+           ,[LESSON_ID]
+           ,[LESSON_LATEST]
+           ,[START_DATE]
+           ,[END_DATE]
+           ,[TIME_SPEND]
+           ,[LATEST_DATE]
+           ,[EXPIRE_DATE]
+           ,[PERCENT_PROGRESS]
+           ,[COURSE_RESULT]
+           ,[FROM_FILE]
+           ,[IS_ACTIVE]
+           ,[CREATED_BY]
+           ,[CREATED_TIME])
+     VALUES
+           (s.[EMP_CODE]
+           ,s.[NAME_THAI]
+           ,s.[NAME_ENG]
+           ,s.[COURSE_ID]
+           ,s.[COURSE_NAME]
+           ,s.[COURSE_CATEGORY]
+           ,s.[COURSE_MODE]
+           ,s.[WORKS_TATUS]
+           ,s.[EMPLOY_DATE]
+           ,s.[COST_CENTER_CODE]
+           ,s.[ORG_GROUP_ENG]
+           ,s.[SUPER_THAI]
+           ,s.[LESSON_ID]
+           ,s.[LESSON_LATEST]
+           ,s.[START_DATE]
+           ,s.[END_DATE]
+           ,s.[TIME_SPEND]
+           ,s.[LATEST_DATE]
+           ,s.[EXPIRE_DATE]
+           ,s.[PERCENT_PROGRESS]
+           ,s.[COURSE_RESULT]
+           ,s.[FROM_FILE]
+           ,1
+           ,'uipath'
+           ,GETDATE());"]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="596,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[strSqlCommand]" />
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_33" />
+        </If.Else>
+      </If>
+    </Sequence>
+    <Sequence DisplayName="Sequence : Report 2" sap:VirtualizedContainerService.HintSize="735.2,83.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -349,7 +690,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 3" sap:VirtualizedContainerService.HintSize="572.8,83.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
+    <Sequence DisplayName="Sequence : Report 3" sap:VirtualizedContainerService.HintSize="735.2,83.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -456,7 +797,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 4" sap:VirtualizedContainerService.HintSize="572.8,83.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
+    <Sequence DisplayName="Sequence : Report 4" sap:VirtualizedContainerService.HintSize="735.2,83.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -563,10 +904,10 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 5" sap:VirtualizedContainerService.HintSize="572.8,1218.4" sap2010:WorkflowViewState.IdRef="Sequence_29">
+    <Sequence DisplayName="Sequence : Report 5" sap:VirtualizedContainerService.HintSize="735.2,83.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>

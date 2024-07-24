@@ -12,6 +12,8 @@
       "Path": "Download.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strLatestFile&Sequence_85",
+        "strOrgFileName&Sequence_85",
         "intCount&Sequence_1",
         "strFilePath&Sequence_1",
         "boolLoginCompleted&Sequence_1",
@@ -56,11 +58,22 @@
       "Path": "Insert.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strSqlCommand&Sequence_31",
+        "strRow&Sequence_34",
+        "strPercentProgress&Sequence_34",
+        "strExpireDate&Sequence_34",
+        "strLastestDate&Sequence_34",
+        "strTimeSpend&Sequence_34",
+        "strEndDate&Sequence_34",
+        "strStartDate&Sequence_34",
+        "strLessonId&Sequence_34",
+        "strEmployDate&Sequence_32",
+        "arrDTRows&Sequence_31",
+        "dtReport1&Sequence_1",
         "dtReport2&Sequence_25",
         "dtReport3&Sequence_25",
         "dtReport2&Sequence_20",
         "dtReport3&Sequence_20",
-        "dtReport1&Sequence_1",
         "dtReport3&Sequence_15",
         "dtReport2&Sequence_15",
         "dtReport2&Sequence_10",
@@ -132,6 +145,7 @@
       "Path": "Report/Report1.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "doubleTotalSeconds&Sequence_3",
         "dtReport&Sequence_1",
         "timeSpend&Sequence_2",
         "dtCSV&Sequence_2",
@@ -297,6 +311,36 @@
         "strFilePath&Sequence_1",
         "dtReport&Sequence_1",
         "strDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "dtResult",
+        "listFileName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Report/Report7.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strActivityDate&Sequence_9",
+        "arrActivityDate&Sequence_9",
+        "intYear&Sequence_10",
+        "dateActivityDate&Sequence_8",
+        "dateEmployDate&Sequence_8",
+        "strEmployDate&Sequence_3",
+        "arrEmployDate&Sequence_3",
+        "intYear&Sequence_4",
+        "c12&Sequence_2",
+        "c11&Sequence_2",
+        "c10&Sequence_2",
+        "c9&Sequence_2",
+        "c8&Sequence_2",
+        "c0&Sequence_2",
+        "dtCSV&Sequence_2",
+        "strFilePath&Sequence_1",
+        "strDT&Sequence_1",
+        "dtReport&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
         "dtResult",
