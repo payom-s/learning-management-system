@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>850.4,6892</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,6733.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Startup_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -126,7 +126,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Download" sap:VirtualizedContainerService.HintSize="745.6,6827.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Download" sap:VirtualizedContainerService.HintSize="745.6,6668.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intCount" />
       <Variable x:TypeArguments="x:String" Name="strFilePath" />
@@ -144,13 +144,13 @@
         <OutArgument x:TypeArguments="x:String" x:Key="strConnectionString" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: Login – Mcgroup" sap:VirtualizedContainerService.HintSize="683.2,6561.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: Login – Mcgroup" sap:VirtualizedContainerService.HintSize="683.2,6403.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="649.6,6344.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="649.6,6186.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="boolStaySignedIn" />
               <Variable x:TypeArguments="x:Boolean" Name="isDownloadCompleted" />
@@ -164,7 +164,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Sequence : Login" sap:VirtualizedContainerService.HintSize="587.2,910.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Sequence : Login" sap:VirtualizedContainerService.HintSize="587.2,1580.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -260,10 +260,11 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_3" ScriptCode="function (e) {&#xA;document.querySelector('input[type=password]').value='sY[87+b[kz/6';&#xA;}" Version="V3">
+              <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_17" />
+              <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="387.2,257.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_3" ScriptCode="function (e) {&#xA;document.querySelector('input[type=password]').value='sY[87+b[kz/6';&#xA;}" Version="V3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -279,13 +280,14 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NInjectJsScript InputParameter="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScriptCode="function (e) {&#xA;return document.querySelector('input[type=checkbox]').checked!=null;&#xA;}" Version="V3">
+              <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_18" />
+              <uix:NInjectJsScript InputParameter="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="387.2,257.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScriptCode="function (e) {&#xA;return document.querySelector('input[type=checkbox]').checked!=null;&#xA;}" Version="V3">
                 <uix:NInjectJsScript.ScriptOutput>
                   <OutArgument x:TypeArguments="x:Boolean">[boolStaySignedIn]</OutArgument>
                 </uix:NInjectJsScript.ScriptOutput>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -327,7 +329,7 @@
                 </If.Else>
               </If>
             </Sequence>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or boolLoginCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="587.2,881.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_10">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or boolLoginCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="587.2,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_10">
               <ui:InterruptibleDoWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,714.4" sap2010:WorkflowViewState.IdRef="Sequence_69">
                   <sap:WorkflowViewStateService.ViewState>
@@ -367,7 +369,7 @@
               </ui:InterruptibleDoWhile.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
