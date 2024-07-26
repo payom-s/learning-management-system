@@ -164,7 +164,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[Path.GetFileName(currentItem).ToString.StartsWith(strReportName) AND new  System.IO.FileInfo(currentItem).Extension.ToLower.Equals(strExtension.ToLower) = true AND new  System.IO.FileInfo(currentItem).LastWriteTime &gt; dateDownload]" sap:VirtualizedContainerService.HintSize="411.2,668.8" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If Condition="[Path.GetFileName(currentItem).ToString.StartsWith(strReportName) AND new  System.IO.FileInfo(currentItem).Extension.ToLower.Equals(strExtension.ToLower) = true AND new  System.IO.FileInfo(currentItem).CreationTime &gt; dateDownload]" sap:VirtualizedContainerService.HintSize="411.2,668.8" sap2010:WorkflowViewState.IdRef="If_2">
                     <If.Then>
                       <Sequence sap:VirtualizedContainerService.HintSize="377.6,485.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <sap:WorkflowViewStateService.ViewState>
