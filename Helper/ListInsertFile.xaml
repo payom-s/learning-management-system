@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234.4,1753.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,1753.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ListInsertFile_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -188,7 +188,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </WriteLine>
-                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[new  System.IO.FileInfo(currentItem).LastWriteTime.ToString(&quot;dd-MM-yyyy HH.mm.ss&quot;) +ControlChars.Tab+ &quot; : &quot; + dateDownload.ToString(&quot;dd-MM-yyyy HH.mm.ss&quot;)]">
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[new  System.IO.FileInfo(currentItem).CreationTime.ToString(&quot;dd-MM-yyyy HH.mm.ss&quot;) +ControlChars.Tab+ &quot; : &quot; + dateDownload.ToString(&quot;dd-MM-yyyy HH.mm.ss&quot;)]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
