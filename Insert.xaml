@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Insert" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234.4,5181.6" sap2010:WorkflowViewState.IdRef="Insert_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Insert" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234.4,7683.2" sap2010:WorkflowViewState.IdRef="Insert_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -102,7 +102,7 @@
       <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Insert" sap:VirtualizedContainerService.HintSize="782.4,5116.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Insert" sap:VirtualizedContainerService.HintSize="720.8,7618.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, s:DateTime)" Name="dictLatestUpdated" />
       <Variable x:TypeArguments="s:DateTime" Name="dateDownload" />
@@ -136,7 +136,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="720,351.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="658.4,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -215,12 +215,12 @@
       </ui:MultipleAssign.AssignOperations>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="720,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="658.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="strFilePath" />
         <OutArgument x:TypeArguments="x:Int32" x:Key="intCount" />
@@ -233,7 +233,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListLatestUpdated.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="720,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Helper\ListLatestUpdated.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListLatestUpdated.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="658.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Helper\ListLatestUpdated.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, s:DateTime)" x:Key="dictLatestUpdated">[dictLatestUpdated]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
@@ -244,7 +244,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <Sequence DisplayName="Sequence : Report 1 (Read)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence DisplayName="Sequence : Report 1 (Read)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -353,14 +353,14 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 1 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_30">
+    <Sequence DisplayName="Sequence : Report 1 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="658.4,992.8" sap2010:WorkflowViewState.IdRef="Sequence_30">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[listFileName.Count &gt; 0 AND Not IsNothing(dtReport1)]" sap:VirtualizedContainerService.HintSize="500,652.8" sap2010:WorkflowViewState.IdRef="If_11">
+      <If Condition="[listFileName.Count &gt; 0 AND Not IsNothing(dtReport1)]" sap:VirtualizedContainerService.HintSize="560,880.8" sap2010:WorkflowViewState.IdRef="If_11">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -368,13 +368,13 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="466.4,469.6" sap2010:WorkflowViewState.IdRef="Sequence_31">
+          <Sequence sap:VirtualizedContainerService.HintSize="526.4,697.6" sap2010:WorkflowViewState.IdRef="Sequence_31">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -394,7 +394,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtReport1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtReport1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="483.2,280.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
@@ -531,12 +531,12 @@ strPercentProgress,
               </ui:ForEachRow.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="483.2,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
@@ -549,7 +549,26 @@ USING (VALUES " + String.Join("," + Environment.NewLine, arrDTRows) +  ")
 	AS s ([EMP_CODE],[NAME_THAI],[NAME_ENG],[COURSE_ID],[COURSE_NAME],[COURSE_CATEGORY],[COURSE_MODE],[WORKS_TATUS],[EMPLOY_DATE],[COST_CENTER_CODE],[ORG_GROUP_ENG],[SUPER_THAI],[LESSON_ID],[LESSON_LATEST],[START_DATE],[END_DATE],[TIME_SPEND],[LATEST_DATE],[EXPIRE_DATE],[PERCENT_PROGRESS],[COURSE_RESULT],[FROM_FILE])
 	ON s.[EMP_CODE] = t.[EMP_CODE]
     AND s.[COURSE_ID] = t.[COURSE_ID]
-WHEN MATCHED AND (s.[PERCENT_PROGRESS] &lt;&gt; t.[PERCENT_PROGRESS])  THEN 
+WHEN MATCHED AND (s.[NAME_THAI]&lt;&gt;t.[NAME_THAI]
+OR s.[NAME_ENG] &lt;&gt; t.[NAME_ENG]
+OR s.[COURSE_ID] &lt;&gt; t.[COURSE_ID]
+OR s.[COURSE_NAME] &lt;&gt; t.[COURSE_NAME]
+OR s.[COURSE_CATEGORY] &lt;&gt; t.[COURSE_CATEGORY]
+OR s.[COURSE_MODE] &lt;&gt; t.[COURSE_MODE]
+OR s.[WORKS_TATUS] &lt;&gt; t.[WORKS_TATUS]
+OR DATEDIFF(SECOND, COALESCE( s.[EMPLOY_DATE], '19990909'), COALESCE(t.[EMPLOY_DATE], '19990909')) &lt;&gt; 0
+OR s.[COST_CENTER_CODE] &lt;&gt; t.[COST_CENTER_CODE]
+OR s.[ORG_GROUP_ENG] &lt;&gt; t.[ORG_GROUP_ENG]
+OR s.[SUPER_THAI] &lt;&gt; t.[SUPER_THAI]
+OR s.[LESSON_ID] &lt;&gt; t.[LESSON_ID]
+OR s.[LESSON_LATEST] &lt;&gt; t.[LESSON_LATEST]
+OR DATEDIFF(SECOND, COALESCE( s.[START_DATE], '19990909'), COALESCE(t.[START_DATE], '19990909')) &lt;&gt; 0
+OR DATEDIFF(SECOND, COALESCE( s.[END_DATE], '19990909'), COALESCE(t.[END_DATE], '19990909')) &lt;&gt; 0
+OR s.[TIME_SPEND] &lt;&gt; t.[TIME_SPEND]
+OR DATEDIFF(SECOND, COALESCE( s.[LATEST_DATE], '19990909'), COALESCE(t.[LATEST_DATE], '19990909')) &lt;&gt; 0
+OR DATEDIFF(SECOND, COALESCE( s.[EXPIRE_DATE], '19990909'), COALESCE(t.[EXPIRE_DATE], '19990909')) &lt;&gt; 0
+OR s.[PERCENT_PROGRESS] &lt;&gt; t.[PERCENT_PROGRESS]
+OR s.[COURSE_RESULT] &lt;&gt; t.[COURSE_RESULT])  THEN 
 	UPDATE 
     SET [NAME_THAI] = s.[NAME_THAI],
 		[NAME_ENG] = s.[NAME_ENG],
@@ -636,15 +655,15 @@ WHEN NOT MATCHED THEN
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_30">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_114">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_4" Text="[strReport1SqlCommand]" />
+                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_15" Text="[strReport1SqlCommand]" />
                 </Sequence>
               </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
@@ -661,7 +680,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 1 (Insert)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_88">
+    <Sequence DisplayName="Sequence : Report 1 (Insert)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_88">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -721,7 +740,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 2 (Read)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence DisplayName="Sequence : Report 2 (Read)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -824,16 +843,16 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 2 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_38">
+    <Sequence DisplayName="Sequence : Report 2 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="658.4,772" sap2010:WorkflowViewState.IdRef="Sequence_38">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[listFileName.Count &gt; 0 AND  Not IsNothing(dtReport2)]" sap:VirtualizedContainerService.HintSize="500,652.8" sap2010:WorkflowViewState.IdRef="If_13">
+      <If Condition="[listFileName.Count &gt; 0 AND  Not IsNothing(dtReport2)]" sap:VirtualizedContainerService.HintSize="500,660" sap2010:WorkflowViewState.IdRef="If_13">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="466.4,469.6" sap2010:WorkflowViewState.IdRef="Sequence_39">
+          <Sequence sap:VirtualizedContainerService.HintSize="466.4,476.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1008,7 +1027,21 @@ USING (VALUES " + String.Join("," + Environment.NewLine, arrDTRows) +  ")
 	ON s.[EMP_CODE] = t.[EMP_CODE]
     AND s.[COURSE_ID] = t.[COURSE_ID]
     AND s.[LESSON_ID] = t.[LESSON_ID]
-WHEN MATCHED AND (s.[PERCENT_PROGRESS] &lt;&gt; t.[PERCENT_PROGRESS])  THEN 
+WHEN MATCHED AND (s.[NAME_THAI]&lt;&gt;t.[NAME_THAI]
+OR s.[NAME_ENG] &lt;&gt; t.[NAME_ENG]
+OR s.[ORG_NAME_THAI] &lt;&gt; t.[ORG_NAME_THAI]
+OR s.[WORK_STATUS] &lt;&gt; t.[WORK_STATUS]
+OR DATEDIFF(SECOND, COALESCE( s.[EMPLOY_DATE], '19990909'), COALESCE(t.[EMPLOY_DATE], '19990909')) &lt;&gt; 0
+OR s.[COST_CENTER_CODE] &lt;&gt; t.[COST_CENTER_CODE]
+OR s.[ORG_GROUP_ENG] &lt;&gt; t.[ORG_GROUP_ENG]
+OR s.[SUPER_THAI] &lt;&gt; t.[SUPER_THAI]
+OR s.[COURSE_NAME] &lt;&gt; t.[COURSE_NAME]
+OR s.[LESSON_NAME] &lt;&gt; t.[LESSON_NAME]
+OR s.[LESSON_TYPE] &lt;&gt; t.[LESSON_TYPE]
+OR DATEDIFF(SECOND, COALESCE( s.[START_DATE], '19990909'), COALESCE(t.[START_DATE], '19990909')) &lt;&gt; 0
+OR DATEDIFF(SECOND, COALESCE( s.[END_DATE], '19990909'), COALESCE(t.[END_DATE], '19990909')) &lt;&gt; 0
+OR s.[PERCENT_PROGRESS] &lt;&gt; t.[PERCENT_PROGRESS]
+OR s.[LESSON_RESULT] &lt;&gt; t.[LESSON_RESULT]) THEN 
 	UPDATE 
     SET [EMP_CODE] = s.[EMP_CODE],
 		[NAME_THAI] = s.[NAME_THAI],
@@ -1019,9 +1052,9 @@ WHEN MATCHED AND (s.[PERCENT_PROGRESS] &lt;&gt; t.[PERCENT_PROGRESS])  THEN
 		[COST_CENTER_CODE] = s.[COST_CENTER_CODE],
 		[ORG_GROUP_ENG] = s.[ORG_GROUP_ENG],
 		[SUPER_THAI] = s.[SUPER_THAI],
-		[COURSE_ID] = s.[COURSE_ID],
+		--[COURSE_ID] = s.[COURSE_ID],
 		[COURSE_NAME] = s.[COURSE_NAME],
-		[LESSON_ID] = s.[LESSON_ID],
+		--[LESSON_ID] = s.[LESSON_ID],
 		[LESSON_NAME] = s.[LESSON_NAME],
 		[LESSON_TYPE] = s.[LESSON_TYPE],
 		[START_DATE] = s.[START_DATE],
@@ -1088,24 +1121,7 @@ WHEN NOT MATCHED THEN
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_28">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_106">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_7" Text="[strReport2SqlCommand]" />
-                </Sequence>
-              </ui:CommentOut.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
+            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="423.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_16" Text="[strReport2SqlCommand]" />
           </Sequence>
         </If.Then>
         <If.Else>
@@ -1113,7 +1129,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 2 (Insert)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_93">
+    <Sequence DisplayName="Sequence : Report 2 (Insert)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_93">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1173,7 +1189,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 3 (Read)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_110">
+    <Sequence DisplayName="Sequence : Report 3 (Read)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_110">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1276,22 +1292,22 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 3 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="720,1660.8" sap2010:WorkflowViewState.IdRef="Sequence_111">
+    <Sequence DisplayName="Sequence : Report 3 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="658.4,813.6" sap2010:WorkflowViewState.IdRef="Sequence_111">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[listFileName.Count &gt; 0 AND  Not IsNothing(dtReport3)]" sap:VirtualizedContainerService.HintSize="657.6,1548.8" sap2010:WorkflowViewState.IdRef="If_14">
+      <If Condition="[listFileName.Count &gt; 0 AND  Not IsNothing(dtReport3)]" sap:VirtualizedContainerService.HintSize="500,701.6" sap2010:WorkflowViewState.IdRef="If_14">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="624,1365.6" sap2010:WorkflowViewState.IdRef="Sequence_43">
+          <Sequence sap:VirtualizedContainerService.HintSize="466.4,518.4" sap2010:WorkflowViewState.IdRef="Sequence_43">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="580.8,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_40">
@@ -1311,13 +1327,13 @@ WHEN NOT MATCHED THEN
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtReport3]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="580.8,900" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtReport3]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547.2,784" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_45">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="strQuizId" />
                       <Variable x:TypeArguments="x:String" Name="strQuizPercent" />
@@ -1328,7 +1344,7 @@ WHEN NOT MATCHED THEN
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="484.8,351.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_15">
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_15">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
@@ -1427,12 +1443,12 @@ strEndDate,
                       </ui:MultipleAssign.AssignOperations>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:MultipleAssign>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,280.8" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_8">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_55">
                           <sap:WorkflowViewStateService.ViewState>
@@ -1445,7 +1461,7 @@ strEndDate,
                       </ui:CommentOut.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -1455,12 +1471,12 @@ strEndDate,
               </ui:ForEachRow.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="580.8,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_49">
@@ -1475,11 +1491,24 @@ USING (VALUES " + String.Join("," + Environment.NewLine, arrDTRows) +  ")
     AND s.[EMP_CODE] = t.[EMP_CODE]
     AND s.[LESSON_ID] = t.[LESSON_ID]
     AND s.[QUIZ_ID] = t.[QUIZ_ID]
-WHEN MATCHED AND (s.[QUIZ_PERCENT] &lt;&gt; t.[QUIZ_PERCENT])  THEN 
+WHEN MATCHED AND (s.[COURSE_NAME] &lt;&gt; t.[COURSE_NAME]
+             OR s.[NAME_THAI] &lt;&gt; t.[NAME_THAI]
+             OR s.[NAME_ENG] &lt;&gt; t.[NAME_ENG]
+             OR s.[WORK_STATUS] &lt;&gt; t.[WORK_STATUS]
+            OR DATEDIFF(SECOND, COALESCE( s.[EMPLOY_DATE], '19990909'), COALESCE(t.[EMPLOY_DATE], '19990909')) &lt;&gt; 0
+             OR s.[COST_CENTER_CODE] &lt;&gt; t.[COST_CENTER_CODE]
+             OR s.[ORG_GROUP_ENG] &lt;&gt; t.[ORG_GROUP_ENG]
+             OR s.[SUPER_THAI] &lt;&gt; t.[SUPER_THAI]
+             OR s.[LESSON_NAME] &lt;&gt; t.[LESSON_NAME]
+             OR s.[QUIZ_NAME] &lt;&gt; t.[QUIZ_NAME]
+             OR s.[QUIZ_TYPE] &lt;&gt; t.[QUIZ_TYPE]
+             OR s.[QUIZ_PERCENT] &lt;&gt; t.[QUIZ_PERCENT]
+             OR s.[QUIZ_RESULT] &lt;&gt; t.[QUIZ_RESULT]
+OR DATEDIFF(SECOND, COALESCE( s.[START_DATE], '19990909'), COALESCE(t.[START_DATE], '19990909')) &lt;&gt; 0
+OR DATEDIFF(SECOND, COALESCE( s.[END_DATE], '19990909'), COALESCE(t.[END_DATE], '19990909')) &lt;&gt; 0)
+	THEN 
 	UPDATE 
-    SET [COURSE_ID] = s.[COURSE_ID],
-        [COURSE_NAME] = s.[COURSE_NAME],
-        [EMP_CODE] = s.[EMP_CODE],
+    SET [COURSE_NAME] = s.[COURSE_NAME],
         [NAME_THAI] = s.[NAME_THAI],
         [NAME_ENG] = s.[NAME_ENG],
         [WORK_STATUS] = s.[WORK_STATUS],
@@ -1487,9 +1516,7 @@ WHEN MATCHED AND (s.[QUIZ_PERCENT] &lt;&gt; t.[QUIZ_PERCENT])  THEN
         [COST_CENTER_CODE] = s.[COST_CENTER_CODE],
         [ORG_GROUP_ENG] = s.[ORG_GROUP_ENG],
         [SUPER_THAI] = s.[SUPER_THAI],
-        [LESSON_ID] = s.[LESSON_ID],
         [LESSON_NAME] = s.[LESSON_NAME],
-        [QUIZ_ID] = s.[QUIZ_ID],
         [QUIZ_NAME] = s.[QUIZ_NAME],
         [QUIZ_TYPE] = s.[QUIZ_TYPE],
         [QUIZ_PERCENT] = s.[QUIZ_PERCENT],
@@ -1558,15 +1585,15 @@ WHEN NOT MATCHED THEN
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="580.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_25">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_29">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_113">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_6" Text="[strReport3SqlCommand]" />
+                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_14" Text="[strReport3SqlCommand]" />
                 </Sequence>
               </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
@@ -1583,7 +1610,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 3 (Insert)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_112">
+    <Sequence DisplayName="Sequence : Report 3 (Insert)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_112">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1643,7 +1670,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 4 (Read)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
+    <Sequence DisplayName="Sequence : Report 4 (Read)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1746,16 +1773,16 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 4 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_54">
+    <Sequence DisplayName="Sequence : Report 4 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="658.4,813.6" sap2010:WorkflowViewState.IdRef="Sequence_54">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[listFileName.Count &gt; 0 AND  Not IsNothing(dtReport4)]" sap:VirtualizedContainerService.HintSize="500,652.8" sap2010:WorkflowViewState.IdRef="If_15">
+      <If Condition="[listFileName.Count &gt; 0 AND  Not IsNothing(dtReport4)]" sap:VirtualizedContainerService.HintSize="500,701.6" sap2010:WorkflowViewState.IdRef="If_15">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="466.4,469.6" sap2010:WorkflowViewState.IdRef="Sequence_52">
+          <Sequence sap:VirtualizedContainerService.HintSize="466.4,518.4" sap2010:WorkflowViewState.IdRef="Sequence_52">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1937,7 +1964,7 @@ strLastModifyDateTime,
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_28">
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_28">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_62">
@@ -1949,10 +1976,18 @@ strLastModifyDateTime,
 USING (VALUES " + String.Join("," + Environment.NewLine, arrDTRows) +  ")
 	AS s ([COURSE_ID],[COURSE_NAME],[ENROLL_TOTAL],[LEARNING_TOTAL],[COMPLETE_TOTAL],[CERTIFICATE_TOTAL],[SPEND_TIME_TOTAL],[AUTHOR],[CREATE_DATE],[LAST_MODIFY_DATETIME],[LAST_USER_UPDATE],[FROM_FILE])
 	ON s.[COURSE_ID] = t.[COURSE_ID]
-WHEN MATCHED AND (s.[LAST_MODIFY_DATETIME] &lt;&gt; t.[LAST_MODIFY_DATETIME])  THEN 
+WHEN MATCHED AND (s.[COURSE_NAME] &lt;&gt; t.[COURSE_NAME]
+OR s.[ENROLL_TOTAL] &lt;&gt; t.[ENROLL_TOTAL]
+OR s.[LEARNING_TOTAL] &lt;&gt; t.[LEARNING_TOTAL]
+OR s.[COMPLETE_TOTAL] &lt;&gt; t.[COMPLETE_TOTAL]
+OR s.[CERTIFICATE_TOTAL] &lt;&gt; t.[CERTIFICATE_TOTAL]
+OR s.[SPEND_TIME_TOTAL] &lt;&gt; t.[SPEND_TIME_TOTAL]
+OR s.[AUTHOR] &lt;&gt; t.[AUTHOR]
+OR s.[CREATE_DATE] &lt;&gt; t.[CREATE_DATE]
+OR s.[LAST_MODIFY_DATETIME] &lt;&gt; t.[LAST_MODIFY_DATETIME]
+OR s.[LAST_USER_UPDATE] &lt;&gt; t.[LAST_USER_UPDATE])  THEN 
 	UPDATE 
-    SET [COURSE_ID] = s.[COURSE_ID],
-		[COURSE_NAME] = s.[COURSE_NAME],
+    SET [COURSE_NAME] = s.[COURSE_NAME],
 		[ENROLL_TOTAL] = s.[ENROLL_TOTAL],
 		[LEARNING_TOTAL] = s.[LEARNING_TOTAL],
 		[COMPLETE_TOTAL] = s.[COMPLETE_TOTAL],
@@ -2003,7 +2038,7 @@ WHEN NOT MATCHED THEN
               </ui:MultipleAssign.AssignOperations>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -2033,10 +2068,10 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 4 (Insert)" sap:VirtualizedContainerService.HintSize="720,695.2" sap2010:WorkflowViewState.IdRef="Sequence_99">
+    <Sequence DisplayName="Sequence : Report 4 (Insert)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_99">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -2093,7 +2128,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 5 (Read)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
+    <Sequence DisplayName="Sequence : Report 5 (Read)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2196,10 +2231,10 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 5 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_62">
+    <Sequence DisplayName="Sequence : Report 5 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="658.4,813.6" sap2010:WorkflowViewState.IdRef="Sequence_62">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -2375,7 +2410,21 @@ USING (VALUES  " + String.Join("," + Environment.NewLine, arrDTRows) +  ")
 	AS s ([EMP_CODE],[NAME_THAI],[NAME_ENG],[CURRENT_EMAIL],[ORG_NAME_THAI],[WORK_STATUS],[EMPLOY_DATE],[COST_CENTER_CODE],[ORG_GROUP_ENG],[SUPER_THAI],[POST_NAME_THAI],[COMPANY_THAI_NAME],[EXTERNAL_COURSE_NAME],[SCHEDULE_DETAIL],[LINK_CERTIFICATE],[LINK_ADDITIONAL_DOC],[SUBMIT_DATE],[FROM_FILE])
 	ON s.[EMP_CODE] = t.[EMP_CODE]
     AND s.[EXTERNAL_COURSE_NAME] = t.[EXTERNAL_COURSE_NAME]
-WHEN MATCHED AND (s.[SUBMIT_DATE] &lt;&gt; t.[SUBMIT_DATE])  THEN 
+WHEN MATCHED AND (s.[NAME_THAI] &lt;&gt; t.[NAME_THAI]
+OR s.[NAME_ENG] &lt;&gt; t.[NAME_ENG]
+OR s.[CURRENT_EMAIL] &lt;&gt; t.[CURRENT_EMAIL]
+OR s.[ORG_NAME_THAI] &lt;&gt; t.[ORG_NAME_THAI]
+OR s.[WORK_STATUS] &lt;&gt; t.[WORK_STATUS]
+OR DATEDIFF(SECOND, COALESCE( s.[EMPLOY_DATE], '19990909'), COALESCE(t.[EMPLOY_DATE], '19990909')) &lt;&gt; 0
+OR s.[COST_CENTER_CODE] &lt;&gt; t.[COST_CENTER_CODE]
+OR s.[ORG_GROUP_ENG] &lt;&gt; t.[ORG_GROUP_ENG]
+OR s.[SUPER_THAI] &lt;&gt; t.[SUPER_THAI]
+OR s.[POST_NAME_THAI] &lt;&gt; t.[POST_NAME_THAI]
+OR s.[COMPANY_THAI_NAME] &lt;&gt; t.[COMPANY_THAI_NAME]
+OR s.[SCHEDULE_DETAIL] &lt;&gt; t.[SCHEDULE_DETAIL]
+OR s.[LINK_CERTIFICATE] &lt;&gt; t.[LINK_CERTIFICATE]
+OR s.[LINK_ADDITIONAL_DOC] &lt;&gt; t.[LINK_ADDITIONAL_DOC]
+OR DATEDIFF(SECOND, COALESCE( s.[SUBMIT_DATE], '19990909'), COALESCE(t.[SUBMIT_DATE], '19990909')) &lt;&gt; 0) THEN 
 	UPDATE 
     SET [EMP_CODE] = s.[EMP_CODE],
 	    [NAME_THAI] = s.[NAME_THAI],
@@ -2383,7 +2432,8 @@ WHEN MATCHED AND (s.[SUBMIT_DATE] &lt;&gt; t.[SUBMIT_DATE])  THEN
 	    [CURRENT_EMAIL] = s.[CURRENT_EMAIL],
 	    [ORG_NAME_THAI] = s.[ORG_NAME_THAI],
 	    [WORK_STATUS] = s.[WORK_STATUS],
-	    [EMPLOY_DATE] = s.[EMPLOY_DATE],
+--OR DATEDIFF(SECOND, COALESCE( s.[EMPLOY_DATE], '19990909'), COALESCE(t.[EMPLOY_DATE], '19990909')) &lt;&gt; 0
+[EMPLOY_DATE] = s.[EMPLOY_DATE],
 	    [COST_CENTER_CODE] = s.[COST_CENTER_CODE],
 	    [ORG_GROUP_ENG] = s.[ORG_GROUP_ENG],
 	    [SUPER_THAI] = s.[SUPER_THAI],
@@ -2393,7 +2443,8 @@ WHEN MATCHED AND (s.[SUBMIT_DATE] &lt;&gt; t.[SUBMIT_DATE])  THEN
 	    [SCHEDULE_DETAIL] = s.[SCHEDULE_DETAIL],
 	    [LINK_CERTIFICATE] = s.[LINK_CERTIFICATE],
 	    [LINK_ADDITIONAL_DOC] = s.[LINK_ADDITIONAL_DOC],
-	    [SUBMIT_DATE] = s.[SUBMIT_DATE],
+--OR DATEDIFF(SECOND, COALESCE( s.[SUBMIT_DATE], '19990909'), COALESCE(t.[SUBMIT_DATE], '19990909')) &lt;&gt; 0
+[SUBMIT_DATE] = s.[SUBMIT_DATE],
 	    [FROM_FILE] = s.[FROM_FILE],
 		[UPDATED_BY] = 'uipath' ,
 		[UPDATED_TIME] = GETDATE()
@@ -2477,7 +2528,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 5 (Insert)" sap:VirtualizedContainerService.HintSize="720,83.2" sap2010:WorkflowViewState.IdRef="Sequence_102">
+    <Sequence DisplayName="Sequence : Report 5 (Insert)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_102">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2537,7 +2588,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 7 (Read)" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_75">
+    <Sequence DisplayName="Sequence : Report 7 (Read)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_75">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2640,16 +2691,16 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 7 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_81">
+    <Sequence DisplayName="Sequence : Report 7 (Prepare Sql Command)" sap:VirtualizedContainerService.HintSize="658.4,1283.2" sap2010:WorkflowViewState.IdRef="Sequence_81">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[listFileName.Count &gt; 0 And  Not IsNothing(dtReport7)]" sap:VirtualizedContainerService.HintSize="596,1164" sap2010:WorkflowViewState.IdRef="If_19">
+      <If Condition="[listFileName.Count &gt; 0 And  Not IsNothing(dtReport7)]" sap:VirtualizedContainerService.HintSize="596,1171.2" sap2010:WorkflowViewState.IdRef="If_19">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="562.4,980.8" sap2010:WorkflowViewState.IdRef="Sequence_76">
+          <Sequence sap:VirtualizedContainerService.HintSize="562.4,988" sap2010:WorkflowViewState.IdRef="Sequence_76">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2797,6 +2848,35 @@ strActivityDate,
 USING (VALUES  " + String.Join("," + Environment.NewLine, arrDTRows) +  ")
 	AS s ([EMP_CODE],[NAME_THAI],[NAME_ENG],[WORK_STATUS],[EMPLOY_DATE],[COST_CENTER_CODE],[ORG_GROUP_ENG],[SUPER_THAI],[ACTIVITY_DATE],[IP_ADDRESS],[ACTIVITY_GROUP],[ACTIVITY_TYPE],[ACTIVITY_NAME],[ACTIVITY_LINK],[FROM_FILE])
 	ON s.[EMP_CODE] = t.[EMP_CODE]
+	AND s.[ACTIVITY_DATE] = t.[ACTIVITY_DATE]	
+	AND s.[IP_ADDRESS] = t.[IP_ADDRESS]
+	AND s.[ACTIVITY_GROUP] = t.[ACTIVITY_GROUP]
+	AND s.[ACTIVITY_TYPE] = t.[ACTIVITY_TYPE]
+	AND s.[ACTIVITY_NAME] = t.[ACTIVITY_NAME]
+	WHEN MATCHED AND (s.[NAME_THAI] &lt;&gt; t.[NAME_THAI]
+OR s.[NAME_ENG] &lt;&gt; t.[NAME_ENG]
+OR s.[WORK_STATUS] &lt;&gt; t.[WORK_STATUS]
+OR DATEDIFF(SECOND, COALESCE( s.[EMPLOY_DATE], '19990909'), COALESCE(t.[EMPLOY_DATE], '19990909')) &lt;&gt; 0
+OR s.[COST_CENTER_CODE] &lt;&gt; t.[COST_CENTER_CODE]
+OR s.[ORG_GROUP_ENG] &lt;&gt; t.[ORG_GROUP_ENG]
+OR s.[SUPER_THAI] &lt;&gt; t.[SUPER_THAI]
+OR DATEDIFF(SECOND, COALESCE( s.[ACTIVITY_DATE], '19990909'), COALESCE(t.[ACTIVITY_DATE], '19990909')) &lt;&gt; 0
+OR s.[IP_ADDRESS] &lt;&gt; t.[IP_ADDRESS]
+OR s.[ACTIVITY_GROUP] &lt;&gt; t.[ACTIVITY_GROUP]
+OR s.[ACTIVITY_TYPE] &lt;&gt; t.[ACTIVITY_TYPE]
+OR s.[ACTIVITY_NAME] &lt;&gt; t.[ACTIVITY_NAME]
+OR s.[ACTIVITY_LINK] &lt;&gt; t.[ACTIVITY_LINK]) THEN
+	UPDATE SET [NAME_THAI] = s.[NAME_THAI]
+			,[NAME_ENG]=s.[NAME_ENG]
+            ,[WORK_STATUS]=s.[WORK_STATUS]
+            ,[EMPLOY_DATE]=s.[EMPLOY_DATE]
+            ,[COST_CENTER_CODE]=s.[COST_CENTER_CODE]
+            ,[ORG_GROUP_ENG]=s.[ORG_GROUP_ENG]
+            ,[SUPER_THAI]=s.[SUPER_THAI]
+			,[ACTIVITY_LINK]=s.[ACTIVITY_LINK]
+			,[FROM_FILE] = s.[FROM_FILE]
+			,[UPDATED_BY] = 'uipath' 
+			,[UPDATED_TIME] = GETDATE()
 WHEN NOT MATCHED THEN 
     INSERT  ([EMP_CODE]
             ,[NAME_THAI]
@@ -2846,24 +2926,7 @@ WHEN NOT MATCHED THEN
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="519.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_27">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_87">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_13" Text="[strReport7SqlCommand]" />
-                </Sequence>
-              </ui:CommentOut.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
+            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="519.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_17" Text="[strReport7SqlCommand]" />
           </Sequence>
         </If.Then>
         <If.Else>
@@ -2871,7 +2934,7 @@ WHEN NOT MATCHED THEN
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 7 (Insert)" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_105">
+    <Sequence DisplayName="Sequence : Report 7 (Insert)" sap:VirtualizedContainerService.HintSize="658.4,83.2" sap2010:WorkflowViewState.IdRef="Sequence_105">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
