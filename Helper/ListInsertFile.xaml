@@ -103,9 +103,12 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="564.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="x:String" x:Key="strFilePath">[strFilePath]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="strFilePath">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strFilePath" />
+        </OutArgument>
         <OutArgument x:TypeArguments="x:Int32" x:Key="intCount" />
         <OutArgument x:TypeArguments="x:String" x:Key="strConnectionString" />
+        <OutArgument x:TypeArguments="x:Int32" x:Key="intTake" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="564.8,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>850.4,2031.1999999999998</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,2092</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ListLatestUpdated_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -100,7 +100,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ListLatestUpdated" sap:VirtualizedContainerService.HintSize="658.4,1966.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ListLatestUpdated" sap:VirtualizedContainerService.HintSize="658.4,2027.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strQuery" />
       <Variable x:TypeArguments="x:String" Name="strConnectionString" />
@@ -125,7 +125,8 @@ SELECT 'filereport2' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UP
 SELECT 'filereport3' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UPDATED_TIME], [CREATED_TIME])) UPDATED_TIME FROM [LMS_Report3] UNION ALL
 SELECT 'filereport4' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UPDATED_TIME], [CREATED_TIME])) UPDATED_TIME FROM [LMS_Report4] UNION ALL
 SELECT 'filereport5' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UPDATED_TIME], [CREATED_TIME])) UPDATED_TIME FROM [LMS_Report5] UNION ALL
-SELECT 'filereport7' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UPDATED_TIME], [CREATED_TIME])) UPDATED_TIME FROM [LMS_Report7]</InArgument>
+SELECT 'filereport7' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UPDATED_TIME], [CREATED_TIME])) UPDATED_TIME FROM [LMS_Report7] UNION ALL
+SELECT 'filereport8' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UPDATED_TIME], [CREATED_TIME])) UPDATED_TIME FROM [LMS_Report8]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -145,15 +146,18 @@ SELECT 'filereport7' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UP
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="596,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="596,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="strFilePath" />
         <OutArgument x:TypeArguments="x:Int32" x:Key="intCount" />
-        <OutArgument x:TypeArguments="x:String" x:Key="strConnectionString">[strConnectionString]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="strConnectionString">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strConnectionString" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="intTake" />
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>

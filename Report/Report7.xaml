@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234.4,2701.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,2701.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Report7_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,9 +118,12 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="699.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="x:String" x:Key="strFilePath">[strFilePath]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="strFilePath">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strFilePath" />
+        </OutArgument>
         <OutArgument x:TypeArguments="x:Int32" x:Key="intCount" />
         <OutArgument x:TypeArguments="x:String" x:Key="strConnectionString" />
+        <OutArgument x:TypeArguments="x:Int32" x:Key="intTake" />
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -605,14 +608,31 @@ grp.Select(Function(r) r("FROM_FILE")).Last)).CopyToDataTable]</InArgument>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
-          <ui:OutputDataTable DataTable="[dtResult]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[strDT]">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,192.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:OutputDataTable DataTable="[dtResult]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="387.2,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[strDT]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:OutputDataTable>
+              </Sequence>
+            </ui:CommentOut.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-          </ui:OutputDataTable>
+          </ui:CommentOut>
           <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_19">

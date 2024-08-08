@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234.4,5825.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,7664</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Startup_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -126,7 +126,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Download" sap:VirtualizedContainerService.HintSize="689.6,5760.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Download" sap:VirtualizedContainerService.HintSize="735.2,7599.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intCount" />
       <Variable x:TypeArguments="x:String" Name="strFilePath" />
@@ -137,20 +137,25 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="627.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="672.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="x:String" x:Key="strFilePath">[strFilePath]</OutArgument>
-        <OutArgument x:TypeArguments="x:Int32" x:Key="intCount">[intCount]</OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="strFilePath">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strFilePath" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="intCount">
+          <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="intCount" />
+        </OutArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="strConnectionString" />
+        <OutArgument x:TypeArguments="x:Int32" x:Key="intTake" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Browser Chrome: Login – Mcgroup" sap:VirtualizedContainerService.HintSize="627.2,5495.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="IfNotOpen" OutUiElement="{x:Null}" ScopeGuid="1fa57988-135b-4437-a0fc-c4a9b00817bb" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: Login – Mcgroup" sap:VirtualizedContainerService.HintSize="672.8,7333.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,5278.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="639.2,7076.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="boolStaySignedIn" />
               <Variable x:TypeArguments="x:Boolean" Name="isDownloadCompleted" />
@@ -164,14 +169,14 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Sequence : Login" sap:VirtualizedContainerService.HintSize="531.2,2094.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Sequence : Login" sap:VirtualizedContainerService.HintSize="576.8,83.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NInjectJsScript ScriptOutput="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" ExecutionWorld="{x:Null}" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" InScope="{x:Null}" InUiElement="{x:Null}" InputParameter="{x:Null}" OutUiElement="{x:Null}" ScriptCode="function (e) {document.querySelector('#wow_azure_login').click();}" Timeout="{x:Null}" Version="V3">
+              <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScriptCode="function (e) {document.querySelector('#wow_azure_login').click();}" Version="V3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -213,7 +218,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <uix:NInjectJsScript ScriptOutput="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" ExecutionWorld="{x:Null}" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_4" InScope="{x:Null}" InUiElement="{x:Null}" InputParameter="{x:Null}" OutUiElement="{x:Null}" ScriptCode="function (e) {&#xA;document.querySelector('input[type=email]').value='mc_academy@mcgroupnet.com';&#xA;}" Timeout="{x:Null}" Version="V3">
+              <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_4" ScriptCode="function (e) {&#xA;document.querySelector('input[type=email]').value='mc_academy@mcgroupnet.com';&#xA;}" Version="V3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -221,7 +226,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NInjectJsScript>
-              <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Click 'ถัดไป'" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Timeout="{x:Null}" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'ถัดไป'" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/2cc9d1a1-1444-47e1-bd34-b6aa4747dabe/oauth2/v2.0/authorize?client_id=dbe493ee-ed79-4e65-82ae-3124a1b9d5b9&amp;response_type=code&amp;redirect_uri=https://mcacademy.mcgroupnet.com/user-dashboard/&amp;scope=openid+profile+email&amp;response_mode=query&amp;domain_hint=https://mcacademy.mcgroupnet.com" CvElementArea="1052, 612, 139, 45" CvTextArea="1101, 621, 38, 22" CvTextArgument="nolu" CvType="Button" DesignTimeRectangle="1054, 615, 135, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'ถัดไป'" FullSelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' type='submit' class='win-button button_primary high-contrast-overrides button ext-button primary ext-primary' aaname='ถัดไป' /&gt;" Guid="03864e05-a255-4096-b523-29b09a65a67d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIsAAAAsCAYAAABVAEupAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOfSURBVHhe7ZlLS1RhGMf9An2D1i36BC0jiGjZohZRmyCCiII2WYR02bioSAq6GoVgSJAZGWbaRbuYWt6vY17GW+p4m3FGxxl9Ov/XnuF4OPJO0GZO/z/80PP6ntm8P5/zPGfyhGGyDGVhsk5GlrwTVYT4oqEsxIqGshArGspCrGgoC7GioSzEioayECsaykKsaCgLsaKhLD5cqx6SoUhC9txolMdfxiW1ti6RpVU59qTDd3/Q0VAWH44+apfxhRU5XdYjgzMJqeyYlthKWh5+GvXdH3Q0lMWHvTebjCR368Iy4UgDSaLLKcry56fvpv+VHQX1EpqOy8f+OZmKJuXyqwHK4iTwsuDgm4YXZW19XVpHo7Lz0ifDg/pR05P43QMgxmp6XX6EF+V4SSdlcRJ4WdB/hOeWJb+8T/qn4nL7/YhpXiEORPK7xws+429k6ZqIGfz+lotoAi/LtjM1UtU1I2lnonGKi8w6U01Jw7hsz//gu98PyrIR9ixZQFk2EkhZzj3vM6MvqgmyklqT9rGoHHEO3b0P1QVVZi6+aqoOEk+m5evgvOwras7s88qy/1azmZbQB73pipjqpXsBZckRij+PSdKRo7Z3VnZf32hgT5Z2y0/ncDHZHLjTYtZwwI1DC0aOe3WjpunF2sWKkMzEkqbP0QbYK8sVZzrqHI+Z9zDDswk5eL/VrCuUJQfYVdhgDg8TjPe/HcLgwEsbJ8z1qafdsrSSzly7OV/ebyRCM4zrrSoLqhHW8Xf3/ZQlB9BD1bgPDFVibH5Zanoi5hrVAXvx8+yzXvMoQkXCSK2fg0eM+3O9PQs+i7LkMPj+BlKguugjB/jJguqB74GwVt0dkaLaYWkJRzNy6F7KspHAyfJ9ZFF+LSbNo8K97pUFfQbG6Iq2KSl4GTLf/SC4n7JsRhM4WbY6KK8s6Gl6JpfMlITrsuZJ8xgqrBqkLB40gZQFWUik5MKL/sy6VxbwzpmYsIYJaD6ekrfOowgSbSULGlo0tlq1KEuOg54DvQd6ELcYfrLoYaO5/eaM0Rifse6V5XBxm5myMFFhZEa/477fLcsh5/GGEb0uNJdZy3U0gZPlauWAJFbTWVUW/I4Xd687Zja9/vfKgmqDyQgv4byVxRtUH3wH5X0BmMtoAicL+fdoKAuxoqEsxIqGshArGspCrGgoC7GioSzEioayECsaykKsaCgLsaKhLMSKhrIQKxrKQqxoMrIwjC2UhckyIr8B04Fqss0euNwAAAAASUVORK5CYII=" InformativeScreenshot="51912b436959d6cca2869eab535c18c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ลงชื่อเข้าใช้บัญชีของคุณ' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -268,7 +273,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <uix:NInjectJsScript ScriptOutput="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" ExecutionWorld="{x:Null}" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_3" InScope="{x:Null}" InUiElement="{x:Null}" InputParameter="{x:Null}" OutUiElement="{x:Null}" ScriptCode="function (e) {&#xA;document.querySelector('input[type=password]').value='sY[87+b[kz/6';&#xA;}" Timeout="{x:Null}" Version="V3">
+              <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_3" ScriptCode="function (e) {&#xA;document.querySelector('input[type=password]').value='sY[87+b[kz/6';&#xA;}" Version="V3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -276,7 +281,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NInjectJsScript>
-              <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Click 'ลงชื่อเข้าใช้'" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Timeout="{x:Null}" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'ลงชื่อเข้าใช้'" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/2cc9d1a1-1444-47e1-bd34-b6aa4747dabe/oauth2/v2.0/authorize?client_id=dbe493ee-ed79-4e65-82ae-3124a1b9d5b9&amp;response_type=code&amp;redirect_uri=https://mcacademy.mcgroupnet.com/user-dashboard/&amp;scope=openid+profile+email&amp;response_mode=query&amp;domain_hint=https://mcacademy.mcgroupnet.com" CvElementArea="1052, 677, 138, 44" CvTextArea="1079, 687, 86, 21" CvTextArgument="asdaushhle'" CvType="Button" DesignTimeRectangle="1054, 680, 135, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'ลงชื่อเข้าใช้'" FullSelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idSIButton9' tag='INPUT' type='submit' class='win-button button_primary high-contrast-overrides button ext-button primary ext-primary' aaname='ลงชื่อเข้าใช้' /&gt;" Guid="ff5fd026-5452-4aed-923a-620e9e8d50ec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIsAAAAsCAYAAABVAEupAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAYvSURBVHhe7ZnJb1xFEMbzD/AfcOLAgTsSFyTEBXFAiAMSQiAhOIAQAgQShEUBsQZCghCQQAIoYUlIIDGBEBxikXghjpfYsRPva+x435fxbjfv16GG9vObaXvs8Ri7PunTzLxXr+t119fV1T3bjEKxTKhYFMtGXCzbnsxWKiMpULEovRSoWJReClQsSi8FKhallwIVi9JLgYpF6aVAxaL0UqBiUXop2PRiyanpN18VtEfeyxRf+KnWdAxPmYUFY8l3rkXZbgQKVCzrzMcPXTF9Y9Mmq7zH3PZmgblrd7G5dG3EDMZm7L2oZzJNgS5D68wv89ptNpmdXzAnK3rsNUQyNjVnDl7oWGK/ESjYtGIhmzBjrw9Nmke/qYy0WQ3f+6PJTM7M2yDv+LXBXsNnTde4uem5nCX2QsRS0Dhk3v690TT2xqxQarvHTV7DoLlj58XIZ2Cq/taCgk0jFtJ5SeuImQtmLDOXQb3cPpo2sXyc02pm5hbM8MSsOVPVb68R8L8DIYRtXd77aalpHZiw73n6Sp99pntk2l6Pshem6m8tKNgUYrl1R74VitQBN28/bz47d82MTM5apkMsEF9kr/357eZoaZcZis2a7Vl1kbZRvHNXkWkfnFx2wFfrL1UKNoVYXjpeZyZm5v7tiTFTs/N2BlJIjqZRLG+dajTTgS+yBDual0+sLHB37ym2mY8iPOp+mKv1lyoFm7rA3ZfbZmLTc+aVrPrI+5nmSsUC6Qt9om9R99NBQcbEcs8npaawech2HDBbWvonImeLu85nV/XFC7rwecXA+Ixd27n3+skGm13OVvdbe5am7y52WBuxZ7vKNe6JL7IQ2cjdbt+/t8xUXB+1/gHtUqjSrhtwCtTc+kF7n/YBRSn9pKaS9oRRYnkk8F8XFLzii9rr+6JO6+uJb6/a/vIuLEluW+mkICNikbW6Z3TavPFbgw3WA/vKTXnbqF1O3j3dtMj+gzPNpjIYoKcPV1vRPLj/snnoQIV9XuoUApUfFHwE+sPAnoBRAN7yWq5tg6JwPBj4IyWd5vb3C61PAo4/KRhhWCy0TfDYwRBwfuMTEezMbl4U8Ie/rrDvuftsi/VBgOkf70JNJSIXhsVCH5r6JuK+eMcT5d3W197zbdb2asdYpPDSSUFGxMIgHS/rXjI7yCDsDBgQd2AlswCpQShg54Pp62abPUFWoehjm8lspHYhoLTxRV5b5KHXqcpeWwQ/dvDGvbBYnjlSbUVGpihrG7HvzOynHuLZqOwQ5o8lXVYwiMm9Hn5Wai/X14s/15reYFIcLu60/aJPfHfbSTcFG65mYWfAADKQ4XsMqojloz9brKgYTM4p2B0QVMlKEnQ3a0TxncCeVE/xyO+wWAggs/3ZozWmvidmxcdSRoZCoMsRS9iHMPwswmzojcV9HQh2PfTpUOGNwzqxJ3u57aSbgoyJhZTLMkGKBXwyU/+qHbADQtCPBQJw6wlXLAwcQSS7nKsbsPWOm5Ek6BII7BEV9giS7TbXCSB2icTC7Oa8huf4vNA0ZJe/+z6/FG/XJ5awD2H4WTkCEF9yToSda1/VObaonXRTkBGxEFAGhdTMms5v1mGKQ5YREQvfi1qG48uVKxa3vaiAhcVCoBATdU9bUC9JGz6xhEmg3GCtpVjCTORrS4lFOk0Wca8jCtIv97DhSJzdEjOMe4nEEhZG1DUCxRkF9cBKMovLqGD5Ag5TEUsyX1tSLKAz2Aq6wWfguIcNv8k8DDTrNMsW31MVC8Kj1hEbyG/qAvm/RZ5DVCJSsU0WwNWIJWockvnacmKhfqA4RQTuLA6LBVJksmSxli9XLLsCEbCzYNfEb9lpkbnYpnONT/6IY1kSf7SFDUVmc1ATvfrLfwd64WDJDgw/yQ7Jkokl0TiEfcHnj9XYcZB/q9eLgowVuHSYv+kZEAkejBILfOqHKrsLSSYWF2ypKXzdzMChFsHBL+CTILEVFhuWJ5YpKTKjMosLljZ2XK5dmInEAmUcEmUWF2Q73ndLnbMo/18UqFiUXgpULEovBSoWpZcCFYvSS4GKRemlQMWi9FKgYlF6KVCxKL0UqFiUXgpULEovBSoWpZcCFYvSS0FcLAqFDyoWxTJhzD8FYSQnyCpuyAAAAABJRU5ErkJggg==" InformativeScreenshot="38acc007e7bb588ca92a2aa6988582e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ลงชื่อเข้าใช้บัญชีของคุณ' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -295,7 +300,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <uix:NInjectJsScript ContinueOnError="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" ExecutionWorld="{x:Null}" sap:VirtualizedContainerService.HintSize="410.4,257.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" InScope="{x:Null}" InUiElement="{x:Null}" InputParameter="{x:Null}" OutUiElement="{x:Null}" ScriptCode="function (e) {&#xA;return document.querySelector('input[type=checkbox]')!=null;&#xA;}" Timeout="{x:Null}" Version="V3">
+              <uix:NInjectJsScript InputParameter="{x:Null}" DelayAfter="1" DelayBefore="1" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="410.4,257.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScriptCode="function (e) {&#xA;return document.querySelector('input[type=checkbox]')!=null;&#xA;}" Version="V3">
                 <uix:NInjectJsScript.ScriptOutput>
                   <OutArgument x:TypeArguments="x:Boolean">[boolStaySignedIn]</OutArgument>
                 </uix:NInjectJsScript.ScriptOutput>
@@ -306,7 +311,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NInjectJsScript>
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="410.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="[&quot;boolStaySignedIn : &quot; + boolStaySignedIn.ToString]" TextWriter="{x:Null}" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="410.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="[&quot;boolStaySignedIn : &quot; + boolStaySignedIn.ToString]" />
               <If Condition="[boolStaySignedIn]" sap:VirtualizedContainerService.HintSize="410.4,716" sap2010:WorkflowViewState.IdRef="If_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -321,7 +326,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="333.6,257.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_6" ScriptCode="function (e) {&#xD;&#xA;var bt = document.querySelector('#idBtn_Back');&#xD;&#xA;var cb = document.querySelector('input[type=checkbox]');&#xD;&#xA;if(cb != null) { cb.checked = false; }&#xD;&#xA;if(bt != null) { bt.click(); }&#xD;&#xA;}" Version="V3">
+                    <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="333.6,257.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_6" ScriptCode="function (e) {&#xA;var bt = document.querySelector('#idBtn_Back');&#xA;var cb = document.querySelector('input[type=checkbox]');&#xA;if(cb != null) { cb.checked = false; }&#xA;if(bt != null) { bt.click(); }&#xA;}" Version="V3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -337,7 +342,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NCheck Action="Uncheck" AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NCheck_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Timeout="{x:Null}" Version="V3">
+                          <uix:NCheck Action="Uncheck" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V3">
                             <uix:NCheck.Target>
                               <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/2cc9d1a1-1444-47e1-bd34-b6aa4747dabe/login" CvElementArea="431, 629, 30, 29" CvType="CheckBox" DesignTimeRectangle="434, 632, 25, 25" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='KmsiCheckboxField' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='KmsiCheckboxField' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="c3aa58d6-7ab6-4aee-bcf8-6953d138497f" ImageBase64="" InformativeScreenshot="625c4e81e255ae05fb77c6a3a9f59e0b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ลงชื่อเข้าใช้บัญชีของคุณ' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -371,7 +376,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'ไม่'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Timeout="{x:Null}" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ไม่'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="https://login.microsoftonline.com/2cc9d1a1-1444-47e1-bd34-b6aa4747dabe/login" CvElementArea="594, 673, 139, 45" CvTextArea="651, 684, 21, 22" CvTextArgument="'ai" CvType="Button" DesignTimeRectangle="596, 677, 135, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'ไม่'" FullSelectorArgument="&lt;webctrl id='idBtn_Back' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idBtn_Back' tag='INPUT' type='button' class='win-button button-secondary button ext-button secondary ext-secondary' aaname='ไม่' /&gt;" Guid="b26e4505-2d30-4b59-8721-6ac1bfbefae9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIsAAAAsCAYAAABVAEupAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIaSURBVHhe7Zo9r2FRFIbVCpVGr9dJ6IROIwqCThAqFVESCaLwAwiJiKhEp5AQISQ+/tN77zn3rpO55sws085+n+TJOdlW+WRn23hAyJswFvI2TizP55NSVwXGQlUFxkJVBcZCVQXGQlUFxkJVBcZCVQXGQlUFxkJVBcZCVQWjYrnf7ygWi5hOpzifz8jlcvD5fBgMBq7z9EvBuJ2l2+2i0+lgsVggk8mg1WohnU7jcrm4zlODYxmPx6hWqxiNRvbTioex/F3BuFhWqxWy2awTCmPRFYyLxYoin88jFAphs9n8UyzWWceKzO2z/1nBuFheZSy6AmNhLKoCY+GZRVVgLC+xWPcvhUIBfr8fvV4Pj8fjx2wkEsF+v3fWTFBgLC+xrNdr1Go1bLdbe/1wOPyYZSyfuA2Z4J92Fq/X+1sYjOUbtyETfI3l13XG8qXAWBiLqsBYGIuqwFheYjmdTiiVSvav0da5JRqNYjgc4nq9Mpbvp+uQCVoBeDweBINBTCYTNJtNpFIp+xkOhzGfz5FMJhGLxVAulxmLhduQCVp3KZbL5RL1et2+oa1UKmi324jH4zgej/au0mg0XL8hmaBgfCy73Q6JRMLZWWazmf0eCATQ7/edS7nb7Wb/cYqxfOI2RKmlwFioqsBYqKrAWKiqwFioqsBYqKrAWKiqwFioqsBYqKrAWKiqwFioqsBYqKrgxEKIBmMhbwJ8AFSwAP+eeyw4AAAAAElFTkSuQmCC" InformativeScreenshot="e3c6b623a0f98cc24fd6eedb85c3fe28.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ลงชื่อเข้าใช้บัญชีของคุณ' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                             </uix:NClick.Target>
@@ -398,7 +403,7 @@
                 </If.Else>
               </If>
             </Sequence>
-            <ui:InterruptibleDoWhile Condition="[not (intCount &lt;= 0 or boolLoginCompleted)]" CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="531.2,919.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_10" MaxIterations="{x:Null}">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or boolLoginCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="576.8,919.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_10">
               <ui:InterruptibleDoWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,752" sap2010:WorkflowViewState.IdRef="Sequence_69">
                   <sap:WorkflowViewStateService.ViewState>
@@ -414,7 +419,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Delay>
-                  <uix:NInjectJsScript ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Inject Js Script" ExecutionWorld="{x:Null}" sap:VirtualizedContainerService.HintSize="433.6,257.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_5" InScope="{x:Null}" InUiElement="{x:Null}" InputParameter="{x:Null}" OutUiElement="{x:Null}" ScriptCode="function (e) {return document.querySelector('a.jet-auth-links__item') != null;}" Timeout="{x:Null}" Version="V3">
+                  <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="Inject Js Script" sap:VirtualizedContainerService.HintSize="433.6,257.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_5" ScriptCode="function (e) {return document.querySelector('a.jet-auth-links__item') != null;}" Version="V3">
                     <uix:NInjectJsScript.ScriptOutput>
                       <OutArgument x:TypeArguments="x:Boolean">[boolLoginCompleted]</OutArgument>
                     </uix:NInjectJsScript.ScriptOutput>
@@ -433,7 +438,7 @@
                       <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[&quot;boolLoginCompleted : &quot;  + boolLoginCompleted.ToString + &quot; : &quot; + intCount.ToString]" TextWriter="{x:Null}" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[&quot;boolLoginCompleted : &quot;  + boolLoginCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
               <sap:WorkflowViewStateService.ViewState>
@@ -443,15 +448,15 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InterruptibleDoWhile>
-            <If Condition="[boolLoginCompleted]" sap:VirtualizedContainerService.HintSize="531.2,2069.6" sap2010:WorkflowViewState.IdRef="If_19">
+            <If Condition="[boolLoginCompleted]" sap:VirtualizedContainerService.HintSize="576.8,5879.2" sap2010:WorkflowViewState.IdRef="If_19">
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="492.8,1886.4" sap2010:WorkflowViewState.IdRef="Sequence_93">
+                <Sequence sap:VirtualizedContainerService.HintSize="543.2,5696" sap2010:WorkflowViewState.IdRef="Sequence_93">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_22">
+                  <Assign sap:VirtualizedContainerService.HintSize="500,81.6" sap2010:WorkflowViewState.IdRef="Assign_22">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                     </Assign.To>
@@ -459,10 +464,10 @@
                       <InArgument x:TypeArguments="x:String">["filereport1_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 1" sap:VirtualizedContainerService.HintSize="449.6,52.8" sap2010:WorkflowViewState.IdRef="If_7">
+                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 1" sap:VirtualizedContainerService.HintSize="500,1053.6" sap2010:WorkflowViewState.IdRef="If_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -545,7 +550,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <uix:NGoToUrl ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="423.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Url="https://mcacademy.mcgroupnet.com/report-1/?exportnow=true&amp;fn=report1" Version="V3">
+                        <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="423.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="https://mcacademy.mcgroupnet.com/report-loading/?r=1" Version="V3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -555,7 +560,7 @@
                         </uix:NGoToUrl>
                         <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_36">
                           <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_92">
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_92">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -606,7 +611,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <ui:InterruptibleDoWhile Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1" MaxIterations="{x:Null}">
+                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                           <ui:InterruptibleDoWhile.Body>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,576" sap2010:WorkflowViewState.IdRef="Sequence_10">
                               <sap:WorkflowViewStateService.ViewState>
@@ -631,7 +636,7 @@
                                   <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" TextWriter="{x:Null}" />
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                             </Sequence>
                           </ui:InterruptibleDoWhile.Body>
                           <sap:WorkflowViewStateService.ViewState>
@@ -667,7 +672,7 @@
                                   <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:MoveFile ContinueOnError="{x:Null}" Destination="[strFilePath]" DestinationResource="{x:Null}" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[strLatestFile]" PathResource="{x:Null}">
+                              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[strLatestFile]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -703,7 +708,7 @@
                       <Sequence sap2010:WorkflowViewState.IdRef="Sequence_41" />
                     </If.Else>
                   </If>
-                  <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_23">
+                  <Assign sap:VirtualizedContainerService.HintSize="500,81.6" sap2010:WorkflowViewState.IdRef="Assign_23">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                     </Assign.To>
@@ -711,10 +716,10 @@
                       <InArgument x:TypeArguments="x:String">["filereport2_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 2" sap:VirtualizedContainerService.HintSize="449.6,52.8" sap2010:WorkflowViewState.IdRef="If_9">
+                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 2" sap:VirtualizedContainerService.HintSize="500,819.2" sap2010:WorkflowViewState.IdRef="If_9">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -797,7 +802,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <uix:NGoToUrl ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_5" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Url="https://mcacademy.mcgroupnet.com/report-2/?exportnow=true&amp;fn=report2" Version="V3">
+                        <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_5" Url="https://mcacademy.mcgroupnet.com/report-loading/?r=2" Version="V3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -833,7 +838,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <ui:InterruptibleDoWhile Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6" MaxIterations="{x:Null}">
+                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
                           <ui:InterruptibleDoWhile.Body>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,576" sap2010:WorkflowViewState.IdRef="Sequence_46">
                               <sap:WorkflowViewStateService.ViewState>
@@ -858,7 +863,7 @@
                                   <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[strReportFileName + &quot; : &quot; + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" TextWriter="{x:Null}" />
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[strReportFileName + &quot; : &quot; + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                             </Sequence>
                           </ui:InterruptibleDoWhile.Body>
                           <sap:WorkflowViewStateService.ViewState>
@@ -894,7 +899,7 @@
                                   <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:MoveFile ContinueOnError="{x:Null}" Destination="[strFilePath]" DestinationResource="{x:Null}" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_6" Overwrite="True" Path="[strLatestFile]" PathResource="{x:Null}">
+                              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_6" Overwrite="True" Path="[strLatestFile]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -930,7 +935,7 @@
                       <Sequence sap2010:WorkflowViewState.IdRef="Sequence_49" />
                     </If.Else>
                   </If>
-                  <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_28">
+                  <Assign sap:VirtualizedContainerService.HintSize="500,81.6" sap2010:WorkflowViewState.IdRef="Assign_28">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                     </Assign.To>
@@ -938,10 +943,10 @@
                       <InArgument x:TypeArguments="x:String">["filereport3_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 3" sap:VirtualizedContainerService.HintSize="449.6,52.8" sap2010:WorkflowViewState.IdRef="If_11">
+                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 3" sap:VirtualizedContainerService.HintSize="500,819.2" sap2010:WorkflowViewState.IdRef="If_11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -1024,7 +1029,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <uix:NGoToUrl ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_6" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Url="https://mcacademy.mcgroupnet.com/report-3/?exportnow=true&amp;fn=report3" Version="V3">
+                        <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_6" Url="https://mcacademy.mcgroupnet.com/report-loading/?r=3" Version="V3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1060,7 +1065,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <ui:InterruptibleDoWhile Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7" MaxIterations="{x:Null}">
+                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
                           <ui:InterruptibleDoWhile.Body>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,576" sap2010:WorkflowViewState.IdRef="Sequence_50">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1085,7 +1090,7 @@
                                   <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" TextWriter="{x:Null}" />
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                             </Sequence>
                           </ui:InterruptibleDoWhile.Body>
                           <sap:WorkflowViewStateService.ViewState>
@@ -1121,7 +1126,7 @@
                                   <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:MoveFile ContinueOnError="{x:Null}" Destination="[strFilePath]" DestinationResource="{x:Null}" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_7" Overwrite="True" Path="[strLatestFile]" PathResource="{x:Null}">
+                              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_7" Overwrite="True" Path="[strLatestFile]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1157,7 +1162,7 @@
                       <Sequence sap2010:WorkflowViewState.IdRef="Sequence_53" />
                     </If.Else>
                   </If>
-                  <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+                  <Assign sap:VirtualizedContainerService.HintSize="500,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                     </Assign.To>
@@ -1165,21 +1170,21 @@
                       <InArgument x:TypeArguments="x:String">["filereport4_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 4" sap:VirtualizedContainerService.HintSize="449.6,52.8" sap2010:WorkflowViewState.IdRef="If_13">
+                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 4" sap:VirtualizedContainerService.HintSize="500,819.2" sap2010:WorkflowViewState.IdRef="If_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="300,606.4" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                      <Sequence sap:VirtualizedContainerService.HintSize="376.8,636" sap2010:WorkflowViewState.IdRef="Sequence_56">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                               <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334.4,24.799999999999997" sap2010:WorkflowViewState.IdRef="AssignOperation_31">
@@ -1223,7 +1228,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:MultipleAssign>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_25">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_25">
                           <ui:CommentOut.Body>
                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,269.6" sap2010:WorkflowViewState.IdRef="Sequence_76">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1251,15 +1256,15 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <uix:NGoToUrl ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="NGoToUrl_7" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Url="https://mcacademy.mcgroupnet.com/report-4/?exportnow=true&amp;fn=report4" Version="V3">
+                        <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_7" Url="https://mcacademy.mcgroupnet.com/report-loading/?r=4" Version="V3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NGoToUrl>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_31">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_31">
                           <ui:CommentOut.Body>
                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_82">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1287,7 +1292,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <ui:InterruptibleDoWhile Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_8" MaxIterations="{x:Null}">
+                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_8">
                           <ui:InterruptibleDoWhile.Body>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,576" sap2010:WorkflowViewState.IdRef="Sequence_54">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1312,7 +1317,7 @@
                                   <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" TextWriter="{x:Null}" />
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                             </Sequence>
                           </ui:InterruptibleDoWhile.Body>
                           <sap:WorkflowViewStateService.ViewState>
@@ -1322,7 +1327,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InterruptibleDoWhile>
-                        <If Condition="[isDownloadCompleted and isDownloadClick]" sap:VirtualizedContainerService.HintSize="256.8,52.8" sap2010:WorkflowViewState.IdRef="If_14">
+                        <If Condition="[isDownloadCompleted and isDownloadClick]" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="If_14">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1348,7 +1353,7 @@
                                   <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:MoveFile ContinueOnError="{x:Null}" Destination="[strFilePath]" DestinationResource="{x:Null}" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_8" Overwrite="True" Path="[strLatestFile]" PathResource="{x:Null}">
+                              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_8" Overwrite="True" Path="[strLatestFile]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1384,7 +1389,7 @@
                       <Sequence sap2010:WorkflowViewState.IdRef="Sequence_57" />
                     </If.Else>
                   </If>
-                  <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_38">
+                  <Assign sap:VirtualizedContainerService.HintSize="500,81.6" sap2010:WorkflowViewState.IdRef="Assign_38">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                     </Assign.To>
@@ -1392,7 +1397,7 @@
                       <InArgument x:TypeArguments="x:String">["filereport5_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 5" sap:VirtualizedContainerService.HintSize="449.6,52.8" sap2010:WorkflowViewState.IdRef="If_15">
+                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 5" sap:VirtualizedContainerService.HintSize="500,52.8" sap2010:WorkflowViewState.IdRef="If_15">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1478,7 +1483,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <uix:NGoToUrl ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_8" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Url="https://mcacademy.mcgroupnet.com/report-5/?exportnow=true&amp;fn=report5" Version="V3">
+                        <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_8" Url="https://mcacademy.mcgroupnet.com/report-loading/?r=5" Version="V3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1514,7 +1519,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <ui:InterruptibleDoWhile Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_9" MaxIterations="{x:Null}">
+                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_9">
                           <ui:InterruptibleDoWhile.Body>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,576" sap2010:WorkflowViewState.IdRef="Sequence_58">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1539,7 +1544,7 @@
                                   <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" TextWriter="{x:Null}" />
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                             </Sequence>
                           </ui:InterruptibleDoWhile.Body>
                           <sap:WorkflowViewStateService.ViewState>
@@ -1575,7 +1580,7 @@
                                   <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:MoveFile ContinueOnError="{x:Null}" Destination="[strFilePath]" DestinationResource="{x:Null}" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_9" Overwrite="True" Path="[strLatestFile]" PathResource="{x:Null}">
+                              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_9" Overwrite="True" Path="[strLatestFile]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1611,7 +1616,7 @@
                       <Sequence sap2010:WorkflowViewState.IdRef="Sequence_61" />
                     </If.Else>
                   </If>
-                  <Assign sap:VirtualizedContainerService.HintSize="449.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_46">
+                  <Assign sap:VirtualizedContainerService.HintSize="500,81.6" sap2010:WorkflowViewState.IdRef="Assign_46">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                     </Assign.To>
@@ -1619,7 +1624,7 @@
                       <InArgument x:TypeArguments="x:String">["filereport7_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 7" sap:VirtualizedContainerService.HintSize="449.6,52.8" sap2010:WorkflowViewState.IdRef="If_17">
+                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 7" sap:VirtualizedContainerService.HintSize="500,52.8" sap2010:WorkflowViewState.IdRef="If_17">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1705,7 +1710,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <uix:NGoToUrl ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_10" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Url="https://mcacademy.mcgroupnet.com/report-7/?exportnow=true&amp;fn=report7" Version="V3">
+                        <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_10" Url="https://mcacademy.mcgroupnet.com/report-loading/?r=7" Version="V3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1741,7 +1746,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <ui:InterruptibleDoWhile Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_11" MaxIterations="{x:Null}">
+                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_11">
                           <ui:InterruptibleDoWhile.Body>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,576" sap2010:WorkflowViewState.IdRef="Sequence_88">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1766,7 +1771,7 @@
                                   <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" TextWriter="{x:Null}" />
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                             </Sequence>
                           </ui:InterruptibleDoWhile.Body>
                           <sap:WorkflowViewStateService.ViewState>
@@ -1802,7 +1807,7 @@
                                   <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:MoveFile ContinueOnError="{x:Null}" Destination="[strFilePath]" DestinationResource="{x:Null}" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_10" Overwrite="True" Path="[strLatestFile]" PathResource="{x:Null}">
+                              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_10" Overwrite="True" Path="[strLatestFile]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1838,14 +1843,192 @@
                       <Sequence sap2010:WorkflowViewState.IdRef="Sequence_91" />
                     </If.Else>
                   </If>
-                  <Sequence DisplayName="Sequence : Logout" sap:VirtualizedContainerService.HintSize="449.6,510.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Assign sap:VirtualizedContainerService.HintSize="500,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["filereport8_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 8" sap:VirtualizedContainerService.HintSize="500,775.2" sap2010:WorkflowViewState.IdRef="If_20">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGoToUrl ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="387.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_9" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Url="https://mcacademy.mcgroupnet.com/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99/" Version="V3" />
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="466.4,592" sap2010:WorkflowViewState.IdRef="Sequence_102">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,194.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_12">
+                          <ui:MultipleAssign.AssignOperations>
+                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                              <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334.4,24.799999999999997" sap2010:WorkflowViewState.IdRef="AssignOperation_43">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[isDownloadCompleted]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_44">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[isDownloadClick]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_45">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="s:DateTime">[timeClick]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="s:DateTime">[DateTime.Now]</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_46">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[intCount]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:Int32">600</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                            </scg:List>
+                          </ui:MultipleAssign.AssignOperations>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:MultipleAssign>
+                        <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="423.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_11" Url="https://mcacademy.mcgroupnet.com/report-loading/?r=8" Version="V3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGoToUrl>
+                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not (intCount &lt;= 0 or isDownloadCompleted)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_12">
+                          <ui:InterruptibleDoWhile.Body>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,576" sap2010:WorkflowViewState.IdRef="Sequence_100">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_52">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[isDownloadCompleted]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).Count &gt; 0]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_53">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[intCount]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
+                            </Sequence>
+                          </ui:InterruptibleDoWhile.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InterruptibleDoWhile>
+                        <If Condition="[isDownloadCompleted and isDownloadClick]" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="If_21">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476.8,676.8" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="strLatestFile" />
+                                <Variable x:TypeArguments="x:String" Name="strOrgFileName" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign DisplayName="Assign : Get latest csv file." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_54">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strLatestFile]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_11" Overwrite="True" Path="[strLatestFile]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:MoveFile>
+                              <Assign DisplayName="Assign : Org csv file name." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_55">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strOrgFileName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[Path.GetFileName(strLatestFile).ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:RenameFileX DisplayName="Rename File" FilePath="[strFilePath + &quot;\&quot;+strOrgFileName]" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="RenameFileX_11" KeepExtension="False" NewName="[strReportFileName]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:RenameFileX>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_101" />
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_103" />
+                    </If.Else>
+                  </If>
+                  <Sequence DisplayName="Sequence : Logout" sap:VirtualizedContainerService.HintSize="500,83.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="387.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_9" Url="https://mcacademy.mcgroupnet.com/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99/" Version="V3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGoToUrl>
                     <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1854,7 +2037,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Delay>
-                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NClick_8" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Timeout="{x:Null}" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://mcacademy.mcgroupnet.com/" CvElementArea="1749, 329, 30, 27" CvType="Icon" DesignTimeRectangle="1748, 333, 39, 26" DesignTimeScaleFactor="1.25" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9; ' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9; ' tag='DIV' type='' class='jet-auth-links__section jet-auth-links__logout' /&gt;" Guid="afc0f6f1-6639-4e12-be5c-3015e9320140" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAeCAYAAAC16ufeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAErSURBVFhHY7h+687/oYJHHUsrPHwdO23Osv8VDb3/8yva4HjrrgMoahav3Ph/xrwVKGLUwkQ71tQx9D+nuCEGBjkYWZ2tRwxYPLe0GUWcGpgox4YnFGE4EoZxORaE0wvqUeTIxZeu3fjfP20BcY7VMPEGWw5y9N5Dx7CqgWFkx4JwYlYVVnWk4POXr/2PSSsjzrEwi9FDERtGdywIgyzCppZYTLFjQaEMchg2jOxQGA5PKEQxkxRMsWORHUIsDorJQzGXWDwgjgXh6NRSFLOJwaOOJYQHLBmAQghb5gJhZAfC8IBmMFwYm2NBFmFTSywmybFDqlIY6OqWJMeC8EA2ZEh2LAgjNxELgBhE06OJSJZjBwqPOpZWeNSxtMajjqUVHnUsrfAQcuyd/wA5kFOXdxVKrwAAAABJRU5ErkJggg==" InformativeScreenshot="61c788eb830999a6734062b005d87fbf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mcgroup – บริษัทมุ่งเน้นการออกแบบและนำเสนอผลิตภัณฑ์ให้มีความหลากหลายทันสมัย' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                       </uix:NClick.Target>
