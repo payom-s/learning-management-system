@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Insert" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234.4,4830.4" sap2010:WorkflowViewState.IdRef="Insert_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Insert" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234.4,7355.2" sap2010:WorkflowViewState.IdRef="Insert_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -103,7 +103,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Insert" sap:VirtualizedContainerService.HintSize="722.4,4765.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Insert" sap:VirtualizedContainerService.HintSize="722.4,7290.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, s:DateTime)" Name="dictLatestUpdated" />
       <Variable x:TypeArguments="s:DateTime" Name="dateDownload" />
@@ -205,14 +205,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <Sequence DisplayName="Sequence : Report 1 (Read)" sap:VirtualizedContainerService.HintSize="660,83.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence DisplayName="Sequence : Report 1 (Read)" sap:VirtualizedContainerService.HintSize="660,888" sap2010:WorkflowViewState.IdRef="Sequence_9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -243,12 +243,12 @@
         </ui:MultipleAssign.AssignOperations>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <If Condition="[dictLatestUpdated.ContainsKey(strReportName) = true]" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="If_2">
+      <If Condition="[dictLatestUpdated.ContainsKey(strReportName) = true]" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="If_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -276,7 +276,7 @@
           <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8" />
         </If.Else>
       </If>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListInsertFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Helper\ListInsertFile.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListInsertFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Helper\ListInsertFile.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="listFileName">[listFileName]</OutArgument>
           <InArgument x:TypeArguments="x:String" x:Key="strReportName">[strReportName]</InArgument>
@@ -289,7 +289,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
-      <If Condition="[listFileName.Count&gt;0]" sap:VirtualizedContainerService.HintSize="410.4,386.4" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[listFileName.Count&gt;0]" sap:VirtualizedContainerService.HintSize="423.2,386.4" sap2010:WorkflowViewState.IdRef="If_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3229,16 +3229,16 @@ strActivityDate,
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 7 (Insert)" sap:VirtualizedContainerService.HintSize="660,1789.6" sap2010:WorkflowViewState.IdRef="Sequence_105">
+    <Sequence DisplayName="Sequence : Report 7 (Insert)" sap:VirtualizedContainerService.HintSize="660,1889.6" sap2010:WorkflowViewState.IdRef="Sequence_105">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[arrDTRows.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="597.6,1677.6" sap2010:WorkflowViewState.IdRef="If_25">
+      <If Condition="[arrDTRows.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="597.6,1777.6" sap2010:WorkflowViewState.IdRef="If_25">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="564,1494.4" sap2010:WorkflowViewState.IdRef="Sequence_103">
+          <Sequence sap:VirtualizedContainerService.HintSize="564,1594.4" sap2010:WorkflowViewState.IdRef="Sequence_103">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcConnectionDB" />
               <Variable x:TypeArguments="x:Int32" Name="intAffectedRecords" />
@@ -3276,9 +3276,9 @@ strActivityDate,
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[arrSplit.Length = intTake]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="520.8,826.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[arrSplit.Length = intTake]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="520.8,926.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="485.6,659.2" sap2010:WorkflowViewState.IdRef="Sequence_137">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="485.6,759.2" sap2010:WorkflowViewState.IdRef="Sequence_137">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="strArrJoin" />
                   </Sequence.Variables>
@@ -3401,6 +3401,7 @@ WHEN NOT MATCHED THEN
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:MultipleAssign>
+                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="423.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_20" Text="[strSqlCommand]" />
                   <ui:ExecuteNonQuery ContinueOnError="{x:Null}" AffectedRecords="[intAffectedRecords]" CommandType="Text" DisplayName="Run command" ExistingDbConnection="[dcConnectionDB]" sap:VirtualizedContainerService.HintSize="423.2,89.6" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_11" Sql="[strSqlCommand]" TimeoutMS="[intTimeOut]">
                     <ui:ExecuteNonQuery.Parameters>
                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
@@ -3743,16 +3744,16 @@ strPercentProgress,
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence : Report 8 (Insert)" sap:VirtualizedContainerService.HintSize="660,83.2" sap2010:WorkflowViewState.IdRef="Sequence_157">
+    <Sequence DisplayName="Sequence : Report 8 (Insert)" sap:VirtualizedContainerService.HintSize="660,1703.2" sap2010:WorkflowViewState.IdRef="Sequence_157">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[arrDTRows.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="597.6,1598.4" sap2010:WorkflowViewState.IdRef="If_29">
+      <If Condition="[arrDTRows.Length &gt; 0]" sap:VirtualizedContainerService.HintSize="597.6,1591.2" sap2010:WorkflowViewState.IdRef="If_29">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="564,1415.2" sap2010:WorkflowViewState.IdRef="Sequence_153">
+          <Sequence sap:VirtualizedContainerService.HintSize="564,1408" sap2010:WorkflowViewState.IdRef="Sequence_153">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcConnectionDB" />
               <Variable x:TypeArguments="x:Int32" Name="intAffectedRecords" />
@@ -3790,9 +3791,9 @@ strPercentProgress,
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[arrSplit.Length = intTake]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="520.8,926.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[arrSplit.Length = intTake]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="520.8,919.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="485.6,759.2" sap2010:WorkflowViewState.IdRef="Sequence_154">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="485.6,752" sap2010:WorkflowViewState.IdRef="Sequence_154">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="strArrJoin" />
                   </Sequence.Variables>
@@ -3899,7 +3900,24 @@ WHEN NOT MATCHED THEN
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:MultipleAssign>
-                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="423.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_19" Text="[strSqlCommand]" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_67">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_173">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="SetToClipboard_19" Text="[strSqlCommand]" />
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
                   <ui:ExecuteNonQuery ContinueOnError="{x:Null}" AffectedRecords="[intAffectedRecords]" CommandType="Text" DisplayName="Run command" ExistingDbConnection="[dcConnectionDB]" sap:VirtualizedContainerService.HintSize="423.2,89.6" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_13" Sql="[strSqlCommand]" TimeoutMS="[intTimeOut]">
                     <ui:ExecuteNonQuery.Parameters>
                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
@@ -3962,7 +3980,7 @@ WHEN NOT MATCHED THEN
             </ui:DatabaseDisconnect>
             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_55">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_161">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,202.4" sap2010:WorkflowViewState.IdRef="Sequence_161">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>

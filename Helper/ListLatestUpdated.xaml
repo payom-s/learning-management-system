@@ -150,9 +150,7 @@ SELECT 'filereport8' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UP
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="strFilePath" />
         <OutArgument x:TypeArguments="x:Int32" x:Key="intCount" />
-        <OutArgument x:TypeArguments="x:String" x:Key="strConnectionString">
-          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strConnectionString" />
-        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="strConnectionString">[strConnectionString]</OutArgument>
         <OutArgument x:TypeArguments="x:Int32" x:Key="intTake" />
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
@@ -286,7 +284,7 @@ SELECT 'filereport8' REPORT_NAME,MAX(IIF([UPDATED_TIME] &gt; [CREATED_TIME], [UP
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Latest Update Time" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="ListLatestUpdated" />
           <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[ControlChars.Tab +  String.Join(Environment.NewLine,dictLatestUpdated.Select(Function(e) e.Key.ToString+ControlChars.Tab+&quot; : &quot;+e.Value.ToString))]" />
         </Sequence>
       </If.Then>
