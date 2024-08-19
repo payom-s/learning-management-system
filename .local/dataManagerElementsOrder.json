@@ -12,6 +12,8 @@
       "Path": "Download.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strPassword&Sequence_1",
+        "strUsername&Sequence_1",
         "strLatestFile&Sequence_97",
         "strOrgFileName&Sequence_97",
         "strLatestFile&Sequence_85",
@@ -45,6 +47,8 @@
       "Path": "Helper/ListDownloadFile.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "timeClick&Sequence_1",
+        "fileList&Sequence_1",
         "strSearchCriteria&Sequence_1",
         "strFilePath&Sequence_1",
         "boolFolderExists&Sequence_1",
@@ -71,6 +75,8 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
+        "strPassword",
+        "strUsername",
         "intTake",
         "strConnectionString",
         "intCount",
@@ -419,6 +425,19 @@
         "strDate",
         "dateResult"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "tmp/test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "timeClick&Sequence_1",
+        "fileList&Sequence_1",
+        "strFilePath&Sequence_1",
+        "strSearchCriteria&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
