@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1384,11786</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,7394</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Startup_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -126,7 +126,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Download" sap:VirtualizedContainerService.HintSize="1394,11721" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Download" sap:VirtualizedContainerService.HintSize="1220,7329" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intCount" />
       <Variable x:TypeArguments="x:String" Name="strFilePath" />
@@ -140,7 +140,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1332,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Helper\ListAssets.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1158,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Helper\ListAssets.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="strFilePath">[strFilePath]</OutArgument>
         <OutArgument x:TypeArguments="x:Int32" x:Key="intCount">[intLoop]</OutArgument>
@@ -156,8 +156,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1332,90" sap2010:WorkflowViewState.IdRef="WriteLine_20" Text="[strUsername]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1332,52" sap2010:WorkflowViewState.IdRef="CommentOut_42">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1158,90" sap2010:WorkflowViewState.IdRef="WriteLine_20" Text="[strUsername]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1158,52" sap2010:WorkflowViewState.IdRef="CommentOut_42">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_107">
           <sap:WorkflowViewStateService.ViewState>
@@ -175,13 +175,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: Login – Mcgroup" sap:VirtualizedContainerService.HintSize="1332,11235" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: Login – Mcgroup" sap:VirtualizedContainerService.HintSize="1158,6843" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1298,11018" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1124,6626" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="boolStaySignedIn" />
               <Variable x:TypeArguments="x:Boolean" Name="isDownloadCompleted" />
@@ -195,7 +195,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Sequence : Login" sap:VirtualizedContainerService.HintSize="1236,4169" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Sequence : Login" sap:VirtualizedContainerService.HintSize="1062,4169" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -658,7 +658,7 @@
                     </ui:CommentOut>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_71">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_184">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_184">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -811,23 +811,23 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
             </Sequence>
-            <uix:NCheckState DisplayName="Check App State 'PATH'" sap:VirtualizedContainerService.HintSize="1236,6510" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Timeout="30" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'PATH'" sap:VirtualizedContainerService.HintSize="1062,2118" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Timeout="30" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="732,6293" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="558,1901" sap2010:WorkflowViewState.IdRef="Sequence_123">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Sequence : Download Report" sap:VirtualizedContainerService.HintSize="670,5657" sap2010:WorkflowViewState.IdRef="Sequence_175">
+                  <Sequence DisplayName="Sequence : Download Report" sap:VirtualizedContainerService.HintSize="496,1665" sap2010:WorkflowViewState.IdRef="Sequence_175">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_56">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_56">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                       </Assign.To>
@@ -835,10 +835,10 @@
                         <InArgument x:TypeArguments="x:String">["filereport1_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 1" sap:VirtualizedContainerService.HintSize="608,1735" sap2010:WorkflowViewState.IdRef="If_23">
+                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 1" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_23">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -1079,7 +1079,7 @@
                         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_139" />
                       </If.Else>
                     </If>
-                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_61">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_61">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                       </Assign.To>
@@ -1087,7 +1087,7 @@
                         <InArgument x:TypeArguments="x:String">["filereport2_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 2" sap:VirtualizedContainerService.HintSize="608,52" sap2010:WorkflowViewState.IdRef="If_25">
+                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 2" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_25">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1101,7 +1101,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="532,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
                             <ui:MultipleAssign.AssignOperations>
                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                 <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334.4,24.799999999999997" sap2010:WorkflowViewState.IdRef="AssignOperation_51">
@@ -1306,7 +1306,7 @@
                         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_145" />
                       </If.Else>
                     </If>
-                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_66">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_66">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                       </Assign.To>
@@ -1314,7 +1314,7 @@
                         <InArgument x:TypeArguments="x:String">["filereport3_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 3" sap:VirtualizedContainerService.HintSize="608,52" sap2010:WorkflowViewState.IdRef="If_27">
+                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 3" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_27">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1328,7 +1328,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_15">
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_15">
                             <ui:MultipleAssign.AssignOperations>
                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                 <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334.4,24.799999999999997" sap2010:WorkflowViewState.IdRef="AssignOperation_55">
@@ -1533,7 +1533,7 @@
                         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_151" />
                       </If.Else>
                     </If>
-                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_71">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_71">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                       </Assign.To>
@@ -1541,7 +1541,7 @@
                         <InArgument x:TypeArguments="x:String">["filereport4_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 4" sap:VirtualizedContainerService.HintSize="608,52" sap2010:WorkflowViewState.IdRef="If_29">
+                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 4" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_29">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1555,7 +1555,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
                             <ui:MultipleAssign.AssignOperations>
                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                 <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334.4,24.799999999999997" sap2010:WorkflowViewState.IdRef="AssignOperation_59">
@@ -1760,7 +1760,7 @@
                         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_157" />
                       </If.Else>
                     </If>
-                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_76">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_76">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                       </Assign.To>
@@ -1768,10 +1768,10 @@
                         <InArgument x:TypeArguments="x:String">["filereport5_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 5" sap:VirtualizedContainerService.HintSize="608,1643" sap2010:WorkflowViewState.IdRef="If_31">
+                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 5" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_31">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -1933,7 +1933,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="476.8,676.8" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                              <Sequence sap:VirtualizedContainerService.HintSize="476,674" sap2010:WorkflowViewState.IdRef="Sequence_130">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="strLatestFile" />
                                   <Variable x:TypeArguments="x:String" Name="strOrgFileName" />
@@ -1943,7 +1943,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Assign DisplayName="Assign : Get latest csv file." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_79">
+                                <Assign DisplayName="Assign : Get latest csv file." sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_79">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[strLatestFile]</OutArgument>
                                   </Assign.To>
@@ -1951,7 +1951,7 @@
                                     <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_16" Overwrite="True" Path="[strLatestFile]">
+                                <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="MoveFile_16" Overwrite="True" Path="[strLatestFile]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1959,7 +1959,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:MoveFile>
-                                <Assign DisplayName="Assign : Org csv file name." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_80">
+                                <Assign DisplayName="Assign : Org csv file name." sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_80">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[strOrgFileName]</OutArgument>
                                   </Assign.To>
@@ -1967,7 +1967,7 @@
                                     <InArgument x:TypeArguments="x:String">[Path.GetFileName(strLatestFile).ToString]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:RenameFileX DisplayName="Rename File" FilePath="[strFilePath + &quot;\&quot;+strOrgFileName]" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="RenameFileX_16" KeepExtension="False" NewName="[strReportFileName]">
+                                <ui:RenameFileX DisplayName="Rename File" FilePath="[strFilePath + &quot;\&quot;+strOrgFileName]" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="RenameFileX_16" KeepExtension="False" NewName="[strReportFileName]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1987,7 +1987,7 @@
                         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_163" />
                       </If.Else>
                     </If>
-                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_81">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_81">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                       </Assign.To>
@@ -1995,7 +1995,7 @@
                         <InArgument x:TypeArguments="x:String">["filereport7_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="608,52" sap2010:WorkflowViewState.IdRef="CommentOut_61">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_61">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_164">
                           <sap:WorkflowViewStateService.ViewState>
@@ -2013,7 +2013,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 7" sap:VirtualizedContainerService.HintSize="608,52" sap2010:WorkflowViewState.IdRef="If_33">
+                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 7" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_33">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2027,7 +2027,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
                             <ui:MultipleAssign.AssignOperations>
                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                 <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334.4,24.799999999999997" sap2010:WorkflowViewState.IdRef="AssignOperation_67">
@@ -2152,7 +2152,7 @@
                                     <InArgument x:TypeArguments="x:Boolean">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).Count &gt; 0]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_83">
+                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_83">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Int32">[intCount]</OutArgument>
                                   </Assign.To>
@@ -2160,7 +2160,7 @@
                                     <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_29" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
+                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_29" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                               </Sequence>
                             </ui:InterruptibleDoWhile.Body>
                             <sap:WorkflowViewStateService.ViewState>
@@ -2232,7 +2232,7 @@
                         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_170" />
                       </If.Else>
                     </If>
-                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_86">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_86">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[strReportFileName]</OutArgument>
                       </Assign.To>
@@ -2240,10 +2240,10 @@
                         <InArgument x:TypeArguments="x:String">["filereport8_"+DateTime.Now.ToString("yyyy.MM.dd")+".csv"]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 8" sap:VirtualizedContainerService.HintSize="608,770" sap2010:WorkflowViewState.IdRef="If_35">
+                    <If Condition="[Not listExistFile.Contains(strReportFileName)]" DisplayName="If : Report 8" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_35">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -2315,7 +2315,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_31" />
-                                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_87">
+                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_87">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Boolean">[isDownloadCompleted]</OutArgument>
                                   </Assign.To>
@@ -2323,7 +2323,7 @@
                                     <InArgument x:TypeArguments="x:Boolean">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).Count &gt; 0]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_88">
+                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_88">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Int32">[intCount]</OutArgument>
                                   </Assign.To>
@@ -2331,7 +2331,7 @@
                                     <InArgument x:TypeArguments="x:Int32">[intCount-1]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_30" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
+                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_30" Text="[strReportFileName + &quot; : &quot;  + isDownloadCompleted.ToString + &quot; : &quot; + intCount.ToString]" />
                               </Sequence>
                             </ui:InterruptibleDoWhile.Body>
                             <sap:WorkflowViewStateService.ViewState>
@@ -2349,7 +2349,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="476.8,676.8" sap2010:WorkflowViewState.IdRef="Sequence_132">
+                              <Sequence sap:VirtualizedContainerService.HintSize="476,674" sap2010:WorkflowViewState.IdRef="Sequence_132">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="strLatestFile" />
                                   <Variable x:TypeArguments="x:String" Name="strOrgFileName" />
@@ -2359,7 +2359,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Assign DisplayName="Assign : Get latest csv file." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_89">
+                                <Assign DisplayName="Assign : Get latest csv file." sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_89">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[strLatestFile]</OutArgument>
                                   </Assign.To>
@@ -2367,7 +2367,7 @@
                                     <InArgument x:TypeArguments="x:String">[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)+"\Downloads").[Select](Function(x) New FileInfo(x)).Where(Function(f) f.Extension.ToLower.Equals(".csv")).Where(Function(c) c.CreationTime &gt;= timeClick).OrderByDescending(Function(x) x.CreationTime).First.ToString]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="MoveFile_18" Overwrite="True" Path="[strLatestFile]">
+                                <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strFilePath]" DisplayName="Move File : Move csv file." sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="MoveFile_18" Overwrite="True" Path="[strLatestFile]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2375,7 +2375,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:MoveFile>
-                                <Assign DisplayName="Assign : Org csv file name." sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_90">
+                                <Assign DisplayName="Assign : Org csv file name." sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_90">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[strOrgFileName]</OutArgument>
                                   </Assign.To>
@@ -2383,7 +2383,7 @@
                                     <InArgument x:TypeArguments="x:String">[Path.GetFileName(strLatestFile).ToString]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:RenameFileX DisplayName="Rename File" FilePath="[strFilePath + &quot;\&quot;+strOrgFileName]" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="RenameFileX_18" KeepExtension="False" NewName="[strReportFileName]">
+                                <ui:RenameFileX DisplayName="Rename File" FilePath="[strFilePath + &quot;\&quot;+strOrgFileName]" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="RenameFileX_18" KeepExtension="False" NewName="[strReportFileName]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2404,36 +2404,76 @@
                       </If.Else>
                     </If>
                   </Sequence>
-                  <Sequence DisplayName="Sequence : Logout" sap:VirtualizedContainerService.HintSize="670,481" sap2010:WorkflowViewState.IdRef="Sequence_177">
+                  <Sequence DisplayName="Sequence : Logout" sap:VirtualizedContainerService.HintSize="496,81" sap2010:WorkflowViewState.IdRef="Sequence_177">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NGoToUrl_19" Url="https://mcacademy.mcgroupnet.com/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99/" Version="V3">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_72">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="Sequence_185">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_19" Url="https://mcacademy.mcgroupnet.com/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%99/" Version="V3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGoToUrl>
+                        </Sequence>
+                      </ui:CommentOut.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGoToUrl>
-                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_32">
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_73">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_186">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_32">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Delay>
+                        </Sequence>
+                      </ui:CommentOut.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </Delay>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V3">
+                    </ui:CommentOut>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1fa57988-135b-4437-a0fc-c4a9b00817bb" Version="V3">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://mcacademy.mcgroupnet.com/" CvElementArea="1749, 329, 30, 27" CvType="Icon" DesignTimeRectangle="1748, 333, 39, 26" DesignTimeScaleFactor="1.25" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9; ' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9; ' tag='DIV' type='' class='jet-auth-links__section jet-auth-links__logout' /&gt;" Guid="afc0f6f1-6639-4e12-be5c-3015e9320140" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAeCAYAAAC16ufeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAErSURBVFhHY7h+687/oYJHHUsrPHwdO23Osv8VDb3/8yva4HjrrgMoahav3Ph/xrwVKGLUwkQ71tQx9D+nuCEGBjkYWZ2tRwxYPLe0GUWcGpgox4YnFGE4EoZxORaE0wvqUeTIxZeu3fjfP20BcY7VMPEGWw5y9N5Dx7CqgWFkx4JwYlYVVnWk4POXr/2PSSsjzrEwi9FDERtGdywIgyzCppZYTLFjQaEMchg2jOxQGA5PKEQxkxRMsWORHUIsDorJQzGXWDwgjgXh6NRSFLOJwaOOJYQHLBmAQghb5gJhZAfC8IBmMFwYm2NBFmFTSywmybFDqlIY6OqWJMeC8EA2ZEh2LAgjNxELgBhE06OJSJZjBwqPOpZWeNSxtMajjqUVHnUsrfAQcuyd/wA5kFOXdxVKrwAAAABJRU5ErkJggg==" InformativeScreenshot="61c788eb830999a6734062b005d87fbf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mcgroup – บริษัทมุ่งเน้นการออกแบบและนำเสนอผลิตภัณฑ์ให้มีความหลากหลายทันสมัย' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="https://mcacademy.mcgroupnet.com/" CvElementArea="1724, 212, 24, 21" CvType="Icon" DesignTimeRectangle="1728, 217, 16, 12" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;svg&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" Guid="82d843bd-43c6-48a3-88c6-d5bf074aa68c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACUSURBVDhPY7h+685/amLaGnigtun/BhOb/6sVNOEYWX6Lmy9YDbIYOoYbCFKIbBA2A2Fi+AyFG7jR3AGs+Mzq9RiKYBhmID5D4QbCFML4l0+fBRuOjJENBGFshuI0EFkjPoxuKMUGgjCyoYPPQKK9THGkUD3ZgBQga4BhZMUwMVyGgTDcQBAGKaRa1qMWprKBd/4DAC8BxgprDJDMAAAAAElFTkSuQmCC" InformativeScreenshot="d7d55e17b35c9b61c44cf6457e958a74.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Mcgroup – บริษัทมุ่งเน้นการออกแบบและนำเสนอผลิตภัณฑ์ให้มีความหลากหลายทันสมัย' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvElementArea="1759, 211, 23, 22" CvType="Icon" DesignTimeRectangle="1762, 215, 16, 16" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;svg&amp;gt;path' idx='2' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='path' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFWSURBVDhPvZNPR4RRFIfb9gn6DC2jTYt2Q1GKFmlo2aaSFokWs8sUydAQU0r0LtOmTW2GRIu0mMUwkfkuJ8/lXPeee4ZktHi4zu/P673umfj6Hso4+b/Cz15fLjr3ctA4k9X6boAzMzQvA27hbfUo07NLMjk144KGx8sWhftHJ26JB16bzwqfnrtFaGFtS5rnnQBnq5NJO2Jhrz+Q+cXNzDxXq2dmYJZ6yJBVPRa2Lu8yI3i/5F0JWdVj4d7hcWHkN1VXmFkfWdVj4fL6dmHkzlRXvHskq3os5J1ZI3Bn/CbY+1PIFoU8Ws/8G8gWhWxAalrZ2JGb6iFoL923AGdmaKmXrPbEQtZJt4OAzkehpWTSVYyFwDrpV09b13FuQVOfXcGsENJ3xrl9Vcnr+0eAs9VtvigE1sluTQqaXTnFLQTWiQ3g0fLOgDOzdNUsIwv/ypgLh/IDm/lVu37ELr4AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
                       </uix:NClick.Target>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -2479,7 +2519,7 @@
                 </uix:TargetAnchorable>
               </uix:NCheckState.Target>
             </uix:NCheckState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1236,52" sap2010:WorkflowViewState.IdRef="CommentOut_65">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1062,52" sap2010:WorkflowViewState.IdRef="CommentOut_65">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="594,163" sap2010:WorkflowViewState.IdRef="Sequence_178">
                   <sap:WorkflowViewStateService.ViewState>
@@ -2541,7 +2581,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1236,52" sap2010:WorkflowViewState.IdRef="CommentOut_66">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1062,52" sap2010:WorkflowViewState.IdRef="CommentOut_66">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,293" sap2010:WorkflowViewState.IdRef="Sequence_179">
                   <sap:WorkflowViewStateService.ViewState>
@@ -2549,7 +2589,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[boolLoginCompleted]" sap:VirtualizedContainerService.HintSize="526,472" sap2010:WorkflowViewState.IdRef="If_19">
+                  <If Condition="[boolLoginCompleted]" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="If_19">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
