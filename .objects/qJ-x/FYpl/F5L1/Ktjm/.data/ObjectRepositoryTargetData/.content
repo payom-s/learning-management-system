@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OHRgl5I5dUyEnAtjurmphA" Reference="hpTugcNJm0G1JtfSwQV9Lg/KtjmmxsEj0GmflHHkv4_uA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://login.microsoftonline.com/2cc9d1a1-1444-47e1-bd34-b6aa4747dabe/login" DesignTimeRectangle="794, 615, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='KmsiCheckboxField' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='KmsiCheckboxField' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="ccd67136-ef1b-4386-8df4-23c9e725b9ce" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ลงชื่อเข้าใช้บัญชีของคุณ' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b58b10ff396302e5b49a913156f6e8b5.png" xmlns="">0Xe-Xae6xokmI_v7OC7DuUQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

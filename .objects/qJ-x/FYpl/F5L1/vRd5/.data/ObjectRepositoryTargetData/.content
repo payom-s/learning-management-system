@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YR4nv0PPmU-9hYFAI4oW0g" Reference="hpTugcNJm0G1JtfSwQV9Lg/vRd5ds2aiU6GH5zeSW7mQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://login.microsoftonline.com/2cc9d1a1-1444-47e1-bd34-b6aa4747dabe/login" CvElementArea="923, 648, 111, 36" CvTextArea="969, 657, 17, 17" CvTextArgument="'La" CvType="Button" DesignTimeRectangle="924, 651, 108, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'ไม่'" FullSelectorArgument="&lt;webctrl id='idBtn_Back' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='idBtn_Back' tag='INPUT' type='button' class='win-button button-secondary button ext-button secondary ext-secondary' aaname='ไม่' /&gt;" Guid="40d65965-4af1-48d0-96d1-39f080464b5a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAkCAYAAABR/76qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE9SURBVHhe7ZgxCoQwFAU9jXfwAh7AA1hb2whaWlta2trZ2lnaeae//MCT3cVlt1tfeAODIWo1hIQkJqhRQHLOgMdxSCKBApIKFJBUoICkAgUkFSggqUABSQUKSCqgDzhNk1VVZdu2WZZlQR9ffRuTgD6gx/KA4zha27ZWFEWIevVtTAL6gPu+h4B1XYeICkioB0zT1OZ5/hrQV2zXdZfvmARRHWJ8NSogsb8EjEUQdUCcTH3O32Euz3NbluXlXzZB1AH96Q7DcAZTwBv7aQX6AUcBCbzaA9+DKeCNVUByETBJknP/8zHElZsC3lQP6Ndp67pa0zRWlmWIiGAe0EM+74msgqgCuojk4fq+D+PnC26fU0D5d4ECkgoUkFSggKQCBSQVKCCpQAFJBQpIKlBAUoECkgrOgIITBaTG7AEjUkylyGylaAAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ลงชื่อเข้าใช้บัญชีของคุณ' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="00a09ec72ca61ee204045eb26d921d11.png" xmlns="">0uyqNJWozi06hwl3KiDWBgg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

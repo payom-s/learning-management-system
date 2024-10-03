@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="EWPJSvyBvkur6cbApIWNmQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" Selector="&lt;html app='chrome.exe' title='ลงชื่อเข้าใช้บัญชีของคุณ' /&gt;" Title="ลงชื่อเข้าใช้บัญชีของคุณ" Url="https://login.microsoftonline.com/2cc9d1a1-1444-47e1-bd34-b6aa4747dabe/oauth2/v2.0/authorize?client_id=dbe493ee-ed79-4e65-82ae-3124a1b9d5b9&amp;response_type=code&amp;redirect_uri=https://mcacademy.mcgroupnet.com/user-dashboard/&amp;scope=openid+profile+email&amp;response_mode=query&amp;domain_hint=https://mcacademy.mcgroupnet.com">
+      <imageRef attrName="InformativeScreenshot" originalValue="dd80ba3c6d652d0eb23ad2069b4ff442.jpg" xmlns="">0ugIsULVWzECXAXn-3ieZKQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sign in with Microsoft",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "gZrjZM6X1UqLbOkMo1M3Ww",
+  "Reference": "hpTugcNJm0G1JtfSwQV9Lg/gZrjZM6X1UqLbOkMo1M3Ww",
+  "ParentRef": "hpTugcNJm0G1JtfSwQV9Lg/Q_WkNnIkwkSADrNxMnBDzQ",
+  "Created": "2024-10-02T02:49:31.6867332Z",
+  "Updated": "2024-10-02T02:49:31.6867332Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

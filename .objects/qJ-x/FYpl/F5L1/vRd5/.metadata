@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ไม่",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "vRd5ds2aiU6GH5zeSW7mQw",
+  "Reference": "hpTugcNJm0G1JtfSwQV9Lg/vRd5ds2aiU6GH5zeSW7mQw",
+  "ParentRef": "hpTugcNJm0G1JtfSwQV9Lg/F5L1QM2HNE2Vwmugo7AO9A",
+  "Created": "2024-10-02T03:01:42.8170431Z",
+  "Updated": "2024-10-02T03:01:42.8170431Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

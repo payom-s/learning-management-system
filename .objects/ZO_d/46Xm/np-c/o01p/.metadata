@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ลงชื่อเข้าใช้",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "o01p6MfydEedfbW1rnoyQA",
+  "Reference": "hpTugcNJm0G1JtfSwQV9Lg/o01p6MfydEedfbW1rnoyQA",
+  "ParentRef": "hpTugcNJm0G1JtfSwQV9Lg/np-cDPgcIEOUJgmdwIYofQ",
+  "Created": "2024-10-02T02:09:23.0556048Z",
+  "Updated": "2024-10-02T02:09:23.0556048Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

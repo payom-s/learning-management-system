@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: ลงชื่อเข้าใช้บัญชีของคุณ",
+  "Type": "Screen",
+  "Id": "F5L1QM2HNE2Vwmugo7AO9A",
+  "Reference": "hpTugcNJm0G1JtfSwQV9Lg/F5L1QM2HNE2Vwmugo7AO9A",
+  "ParentRef": "hpTugcNJm0G1JtfSwQV9Lg/FYpltszGekGowzj2S7va3w",
+  "Created": "2024-10-02T03:01:42.6833207Z",
+  "Updated": "2024-10-02T03:01:42.6833207Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,11 @@
+﻿{
+  "Name": "Chrome: ลงชื่อเข้าใช้บัญชีของคุณ app",
+  "Type": "App",
+  "Id": "ZO_dp57oY0K4RjDBqevCTQ",
+  "Reference": "hpTugcNJm0G1JtfSwQV9Lg/ZO_dp57oY0K4RjDBqevCTQ",
+  "Created": "2024-10-02T02:09:22.9433204Z",
+  "Updated": "2024-10-02T02:09:22.9433204Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
